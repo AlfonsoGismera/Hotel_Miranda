@@ -1,21 +1,33 @@
 .header {
   width: 100%;
   position: relative;
+  align-self: center;
+  size: 2rem;
+  background-color: #333;
 
   &__background {
-    background-color: #333;
-    height: 2rem;      
-    width: 100%;
+    background-color: $primary-gold; // O el color deseado
+    position: relative; // Para posicionar internamente el texto
+  }
+
+  // Texto de background: oculto por defecto (móvil)
+  &__background-text {
+    display: none;
+
+    margin-left: 8.3rem;
+    color: tomato;  
   }
 
   &__container {
+    margin: 0 auto;
+    width: 100%;
     background-color: #fff;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0.5rem 1rem;
-    margin-top: -1rem; // Superponer un poco sobre la franja oscura
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: relative; 
   }
 
   &__toggle {
@@ -29,20 +41,23 @@
 
   &__logo {
     display: flex;
-    align-items: center;
-    font-weight: 700;
-
+    
     &-img {
-      width: 40px;
-      height: 40px;
-      margin-right: 0.5rem;
+      width: 36px;
+      height: 36px;
+      margin-right: 1rem;
     }
 
     &-text {
       font-size: 1rem;
-      font-weight: bold;
       line-height: 1.2;
       color: #000;
+    }
+    &-first-word {
+      font-size: 1.2rem;
+
+      font-weight: bold;
+      color: $primary-gold;
     }
   }
 
@@ -53,12 +68,14 @@
 
   &__action-btn {
     background: none;
-    border: none;
     cursor: pointer;
     margin-left: 1rem;
     font-size: 1.2rem;
     color: #000;
+    padding: 0.6rem;
+    border: none;
 
+    
     &:hover {
       color: #555;
     }
@@ -67,41 +84,38 @@
   // Menú
   &__nav {
     background-color: #fff;
-    /* Oculto por defecto en mobile */
-    height: 0;
-    overflow: hidden;
-    transition: height 0.3s ease, padding 0.3s ease;
+    display: none; 
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 5;
   }
 
   &__menu {
     list-style: none;
-    margin: 0;
-    padding: 0;
-    border-top: 1px solid #ccc; 
 
     &-item {
       padding: 1rem;
-      border-bottom: 1px solid #ccc;
+
     }
 
     &-link {
       color: #000;
       text-decoration: none;
       font-size: 1rem;
-      // font-weight: bold;
-      font-weight: 600; 
-     
+      font-family: 'Archivo', sans-serif;
+      font-weight: 600;
+
       &:hover {
         text-decoration: underline;
       }
     }
   }
 
-
-  /* Cuando el menú está activo, le damos una altura automática */
   &__nav--active {
-    height: auto;
-    padding: 0.5rem 0; // Añade un padding vertical si lo deseas
+    display: block;
+    padding: 0.5rem 0;
   }
 }
 
@@ -115,33 +129,38 @@
     }
 
     &__container {
-      margin-top: -1.5rem;
+      width: 80%;
+      margin-top: -2rem;
       padding: 1rem 2rem;
     }
 
     &__logo {
+      margin: 0.5rem 3rem 1rem 0;
       &-img {
         width: 50px;
         height: 50px;
+        
       }
       &-text {
         font-size: 1.2rem;
       }
     }
-
-    /* Menú a la derecha en una sola línea
-       Se "fusiona" con el container, si lo deseas */
+    
     &__nav {
       position: static;
+      display: block;
       height: auto;
       overflow: visible;
       padding: 0;
     }
+    &__action-btn {
+      border: 2px solid #8585854D;
+}
 
     .header__menu {
       display: flex;
       flex-direction: row;
-      border-top: none; 
+      border-top: none;
       &-item {
         border-bottom: none;
         padding: 0;
@@ -152,7 +171,6 @@
       }
     }
 
-    /* El toggle (X) desaparece en tablet+ si quieres menú normal */
     &__toggle {
       display: none;
     }
@@ -161,11 +179,27 @@
 
 @media (min-width: 1024px) {
   .header {
-    &__container {
-      padding: 1.5rem 3rem;
+    &__background {
+      background-color: $primary-gold;
+      height: 3rem;
     }
+    &__background-text {
+      display: block;
+    }
+
+    &__container {
+      width: 80%;
+      margin-top: -3rem;
+      padding: 1rem 5rem 1rem 2rem;
+    }
+    &__logo {
+      margin: 0.5rem 10rem 1rem 0;
+      }
+    
     &__logo &-text {
       font-size: 1.3rem;
+
+      
     }
     .header__menu {
       &-item {

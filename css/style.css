@@ -1,22 +1,31 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap");
 .header {
   width: 100%;
   position: relative;
-  /* Cuando el menú está activo, le damos una altura automática */
+  align-self: center;
+  size: 2rem;
+  background-color: #333;
 }
 .header__background {
-  background-color: #333;
-  height: 2rem;
-  width: 100%;
+  background-color: #BEAD8E;
+  position: relative;
+}
+.header__background-text {
+  display: none;
+  margin-left: 8.3rem;
+  color: tomato;
 }
 .header__container {
+  margin: 0 auto;
+  width: 100%;
   background-color: #fff;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem 1rem;
-  margin-top: -1rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
 }
 .header__toggle {
   background: none;
@@ -28,19 +37,21 @@
 }
 .header__logo {
   display: flex;
-  align-items: center;
-  font-weight: 700;
 }
 .header__logo-img {
-  width: 40px;
-  height: 40px;
-  margin-right: 0.5rem;
+  width: 36px;
+  height: 36px;
+  margin-right: 1rem;
 }
 .header__logo-text {
   font-size: 1rem;
-  font-weight: bold;
   line-height: 1.2;
   color: #000;
+}
+.header__logo-first-word {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #BEAD8E;
 }
 .header__actions {
   display: flex;
@@ -48,43 +59,43 @@
 }
 .header__action-btn {
   background: none;
-  border: none;
   cursor: pointer;
   margin-left: 1rem;
   font-size: 1.2rem;
   color: #000;
+  padding: 0.6rem;
+  border: none;
 }
 .header__action-btn:hover {
   color: #555;
 }
 .header__nav {
   background-color: #fff;
-  /* Oculto por defecto en mobile */
-  height: 0;
-  overflow: hidden;
-  transition: height 0.3s ease, padding 0.3s ease;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  z-index: 5;
 }
 .header__menu {
   list-style: none;
-  margin: 0;
-  padding: 0;
-  border-top: 1px solid #ccc;
 }
 .header__menu-item {
   padding: 1rem;
-  border-bottom: 1px solid #ccc;
 }
 .header__menu-link {
   color: #000;
   text-decoration: none;
   font-size: 1rem;
+  font-family: "Archivo", sans-serif;
   font-weight: 600;
 }
 .header__menu-link:hover {
   text-decoration: underline;
 }
 .header__nav--active {
-  height: auto;
+  display: block;
   padding: 0.5rem 0;
 }
 
@@ -92,17 +103,16 @@
    Media Queries para tablet y desktop
 ---------------------------------------- */
 @media (min-width: 768px) {
-  .header {
-    /* Menú a la derecha en una sola línea
-       Se "fusiona" con el container, si lo deseas */
-    /* El toggle (X) desaparece en tablet+ si quieres menú normal */
-  }
   .header__background {
     height: 3rem;
   }
   .header__container {
-    margin-top: -1.5rem;
+    width: 80%;
+    margin-top: -2rem;
     padding: 1rem 2rem;
+  }
+  .header__logo {
+    margin: 0.5rem 3rem 1rem 0;
   }
   .header__logo-img {
     width: 50px;
@@ -113,9 +123,13 @@
   }
   .header__nav {
     position: static;
+    display: block;
     height: auto;
     overflow: visible;
     padding: 0;
+  }
+  .header__action-btn {
+    border: 2px solid rgba(133, 133, 133, 0.3019607843);
   }
   .header .header__menu {
     display: flex;
@@ -135,8 +149,20 @@
   }
 }
 @media (min-width: 1024px) {
+  .header__background {
+    background-color: #BEAD8E;
+    height: 3rem;
+  }
+  .header__background-text {
+    display: block;
+  }
   .header__container {
-    padding: 1.5rem 3rem;
+    width: 80%;
+    margin-top: -3rem;
+    padding: 1rem 5rem 1rem 2rem;
+  }
+  .header__logo {
+    margin: 0.5rem 10rem 1rem 0;
   }
   .header__logo .header-text {
     font-size: 1.3rem;
@@ -183,7 +209,7 @@
 
 @media (min-width: 768px) {
   html {
-    font-size: 18px;
+    font-size: 14px;
   }
   .header__nav {
     display: block;
@@ -201,9 +227,47 @@
 }
 @media (min-width: 1024px) {
   html {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
+.footer {
+  background-color: #f8f8f8;
+  display: flex;
+  justify-content: space-between; /* Elementos en extremos */
+  align-items: center; /* Centra verticalmente */
+  padding: 1rem 2rem; /* Ajusta el padding */
+  font-size: 0.8rem; /* Tamaño de fuente pequeño */
+  font-weight: 700; /* Negrita */
+  /* Opcional: si quieres limitar el ancho y centrar el footer en pantalla
+     puedes envolver el contenido en un contenedor adicional:
+     max-width: 1200px; margin: 0 auto; etc. */
+}
+
+.footer__links {
+  display: flex;
+  align-items: center;
+  /* Opcional: si quieres más separación respecto al borde derecho en pantallas anchas
+     margin-right: 1rem; 
+   */
+}
+
+.footer__links a {
+  color: #555;
+  text-decoration: none;
+  margin: 0 0.5rem; /* Espacio horizontal */
+}
+.footer__links a:first-child {
+  margin-left: 0; /* El primer enlace sin margen a la izquierda */
+}
+.footer__links a:hover {
+  text-decoration: underline; /* Efecto hover */
+}
+
+.footer__separator {
+  margin: 0 0.5rem;
+  color: #555;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -213,19 +277,21 @@
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
-  background-color: #fff;
   font-weight: 400;
+  background-color: aqua;
   color: #333;
-}
-
-header {
-  font-family: "Archivo", sans-serif;
 }
 
 .home__section-title {
   font-size: 1.5rem;
   text-align: center;
-  margin: 1.5rem 0;
+  margin: 1.5rem;
+}
+
+main {
+  padding: 2rem 0;
+  background-color: rgb(150, 140, 140);
+  color: #222222;
 }
 
 /*# sourceMappingURL=style.css.map */

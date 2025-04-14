@@ -12,36 +12,33 @@
 
 <body class="page">
   <header class="header">
-    <!-- Fondo oscuro superior -->
-    <div class="header__background"></div>
+    <p class="header__background-text">We Make Your Feel Comfortable</p>
+    
+    <div class="header__background">
 
-    <!-- Contenedor principal en blanco -->
+    </div>
     <div class="header__container">
-      <!-- Botón hamburguesa / X (Mobile) -->
       <button class="header__toggle" aria-label="Toggle Menu">
-        <i class="fas fa-bars"></i> <!-- Ícono 'X' -->
+        <i class="fas fa-bars"></i>
       </button>
-
-      <!-- Logo -->
+  
       <div class="header__logo">
         <img src="./assets/Logo.png" alt="Logo Hotel Miranda" class="header__logo-img" />
         <span class="header__logo-text">
-          HOTEL<br>MIRANDA
+          <span class="header__logo-first-word">HOTEL</span><br>MIRANDA
         </span>
       </div>
-
-   
-          <!-- Menú desplegable -->
-    <nav class="header__nav">
-      <ul class="header__menu">
-        <li class="header__menu-item"><a class="header__menu-link" href="#">About Us</a></li>
-        <li class="header__menu-item"><a class="header__menu-link" href="#">Rooms</a></li>
-        <li class="header__menu-item"><a class="header__menu-link" href="#">Offers</a></li>
-        <li class="header__menu-item"><a class="header__menu-link" href="#">Contact</a></li>
-      </ul>
-    </nav>
-       <!-- Íconos de Usuario y Búsqueda -->
-       <div class="header__actions">
+  
+      <nav class="header__nav">
+        <ul class="header__menu">
+          <li class="header__menu-item"><a class="header__menu-link" href="#">About Us</a></li>
+          <li class="header__menu-item"><a class="header__menu-link" href="#">Rooms</a></li>
+          <li class="header__menu-item"><a class="header__menu-link" href="#">Offers</a></li>
+          <li class="header__menu-item"><a class="header__menu-link" href="#">Contact</a></li>
+        </ul>
+      </nav>
+  
+      <div class="header__actions">
         <button class="header__action-btn" aria-label="Cuenta">
           <i class="fas fa-user"></i>
         </button>
@@ -49,9 +46,12 @@
           <i class="fas fa-search"></i>
         </button>
       </div>
-  </header>
     </div>
-
+  </header>
+  
+  
+  
+  
 
 
   <!-- MAIN CONTENT -->
@@ -91,8 +91,16 @@
 
   <!-- FOOTER -->
   <footer class="footer">
-    <p class="footer__text">© 2025 Hotel Miranda. Todos los derechos reservados.</p>
+    <p class="footer__copyright">
+      © 2023 Hotel Miranda
+    </p>
+    <div class="footer__links">
+      <a href="#">Terms of Use</a>
+      <span class="footer__separator">|</span>
+      <a href="#">Privacy &amp; Environmental Policy</a>
+    </div>
   </footer>
+  
 
   <script src="js/main.js"></script>
 </body>

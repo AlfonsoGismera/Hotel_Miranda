@@ -1,0 +1,42 @@
+.footer {
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: space-between; /* Elementos en extremos */
+    align-items: center;            /* Centra verticalmente */
+    padding: 1rem 2rem;            /* Ajusta el padding */
+    font-size: 0.8rem;             /* Tamaño de fuente pequeño */
+    font-weight: 700;              /* Negrita */
+  
+    /* Opcional: si quieres limitar el ancho y centrar el footer en pantalla
+       puedes envolver el contenido en un contenedor adicional:
+       max-width: 1200px; margin: 0 auto; etc. */
+  }
+  
+  .footer__links {
+    display: flex;
+    align-items: center;
+    
+    /* Opcional: si quieres más separación respecto al borde derecho en pantallas anchas
+       margin-right: 1rem; 
+     */
+  }
+  
+  .footer__links a {
+    color: #555;
+    text-decoration: none;
+    margin: 0 0.5rem; /* Espacio horizontal */
+    
+    &:first-child {
+      margin-left: 0; /* El primer enlace sin margen a la izquierda */
+    }
+    
+    &:hover {
+      text-decoration: underline; /* Efecto hover */
+    }
+  }
+  
+  .footer__separator {
+    margin: 0 0.5rem;
+    color: #555;
+  }
+  
