@@ -7,18 +7,13 @@
     font-size: 0.8rem;             /* Tamaño de fuente pequeño */
     font-weight: 700;              /* Negrita */
   
-    /* Opcional: si quieres limitar el ancho y centrar el footer en pantalla
-       puedes envolver el contenido en un contenedor adicional:
-       max-width: 1200px; margin: 0 auto; etc. */
   }
   
   .footer__links {
     display: flex;
     align-items: center;
     
-    /* Opcional: si quieres más separación respecto al borde derecho en pantallas anchas
-       margin-right: 1rem; 
-     */
+
   }
   
   .footer__links a {

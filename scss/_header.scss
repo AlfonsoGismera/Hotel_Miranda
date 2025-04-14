@@ -6,11 +6,10 @@
   background-color: #333;
 
   &__background {
-    background-color: $primary-gold; // O el color deseado
-    position: relative; // Para posicionar internamente el texto
+    background-color: $primary-gold;  
+    position: relative; 
   }
 
-  // Texto de background: oculto por defecto (móvil)
   &__background-text {
     display: none;
 
