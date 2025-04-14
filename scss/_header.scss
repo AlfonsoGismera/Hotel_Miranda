@@ -1,0 +1,176 @@
+.header {
+  width: 100%;
+  position: relative;
+
+  &__background {
+    background-color: #333;
+    height: 2rem;      
+    width: 100%;
+  }
+
+  &__container {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    margin-top: -1rem; // Superponer un poco sobre la franja oscura
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+
+  &__toggle {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    color: #000;
+    cursor: pointer;
+    margin-right: 0.5rem;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+
+    &-img {
+      width: 40px;
+      height: 40px;
+      margin-right: 0.5rem;
+    }
+
+    &-text {
+      font-size: 1rem;
+      font-weight: bold;
+      line-height: 1.2;
+      color: #000;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+  }
+
+  &__action-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    color: #000;
+
+    &:hover {
+      color: #555;
+    }
+  }
+
+  // Menú
+  &__nav {
+    background-color: #fff;
+    /* Oculto por defecto en mobile */
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease, padding 0.3s ease;
+  }
+
+  &__menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid #ccc; 
+
+    &-item {
+      padding: 1rem;
+      border-bottom: 1px solid #ccc;
+    }
+
+    &-link {
+      color: #000;
+      text-decoration: none;
+      font-size: 1rem;
+      // font-weight: bold;
+      font-weight: 600; 
+     
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+
+  /* Cuando el menú está activo, le damos una altura automática */
+  &__nav--active {
+    height: auto;
+    padding: 0.5rem 0; // Añade un padding vertical si lo deseas
+  }
+}
+
+/* ----------------------------------------
+   Media Queries para tablet y desktop
+---------------------------------------- */
+@media (min-width: 768px) {
+  .header {
+    &__background {
+      height: 3rem;
+    }
+
+    &__container {
+      margin-top: -1.5rem;
+      padding: 1rem 2rem;
+    }
+
+    &__logo {
+      &-img {
+        width: 50px;
+        height: 50px;
+      }
+      &-text {
+        font-size: 1.2rem;
+      }
+    }
+
+    /* Menú a la derecha en una sola línea
+       Se "fusiona" con el container, si lo deseas */
+    &__nav {
+      position: static;
+      height: auto;
+      overflow: visible;
+      padding: 0;
+    }
+
+    .header__menu {
+      display: flex;
+      flex-direction: row;
+      border-top: none; 
+      &-item {
+        border-bottom: none;
+        padding: 0;
+        margin-right: 1.5rem;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+
+    /* El toggle (X) desaparece en tablet+ si quieres menú normal */
+    &__toggle {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .header {
+    &__container {
+      padding: 1.5rem 3rem;
+    }
+    &__logo &-text {
+      font-size: 1.3rem;
+    }
+    .header__menu {
+      &-item {
+        margin-right: 2rem;
+      }
+    }
+  }
+}

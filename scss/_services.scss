@@ -1,0 +1,25 @@
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+    &__item {
+      text-align: center;
+      margin: 1rem;
+    }
+  
+    &__icon {
+      width: 50px;
+      height: 50px;
+      transition: transform 0.3s ease; // Efecto mouseover
+    }
+  
+    &__icon:hover {
+      transform: scale(1.1);
+    }
+  
+    &__text {
+      margin-top: 0.5rem;
+    }
+  }
+  

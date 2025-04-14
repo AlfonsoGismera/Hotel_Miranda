@@ -1,0 +1,231 @@
+@charset "UTF-8";
+.header {
+  width: 100%;
+  position: relative;
+  /* Cuando el menú está activo, le damos una altura automática */
+}
+.header__background {
+  background-color: #333;
+  height: 2rem;
+  width: 100%;
+}
+.header__container {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  margin-top: -1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.header__toggle {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  color: #000;
+  cursor: pointer;
+  margin-right: 0.5rem;
+}
+.header__logo {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+}
+.header__logo-img {
+  width: 40px;
+  height: 40px;
+  margin-right: 0.5rem;
+}
+.header__logo-text {
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #000;
+}
+.header__actions {
+  display: flex;
+  align-items: center;
+}
+.header__action-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  color: #000;
+}
+.header__action-btn:hover {
+  color: #555;
+}
+.header__nav {
+  background-color: #fff;
+  /* Oculto por defecto en mobile */
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s ease, padding 0.3s ease;
+}
+.header__menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid #ccc;
+}
+.header__menu-item {
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+.header__menu-link {
+  color: #000;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.header__menu-link:hover {
+  text-decoration: underline;
+}
+.header__nav--active {
+  height: auto;
+  padding: 0.5rem 0;
+}
+
+/* ----------------------------------------
+   Media Queries para tablet y desktop
+---------------------------------------- */
+@media (min-width: 768px) {
+  .header {
+    /* Menú a la derecha en una sola línea
+       Se "fusiona" con el container, si lo deseas */
+    /* El toggle (X) desaparece en tablet+ si quieres menú normal */
+  }
+  .header__background {
+    height: 3rem;
+  }
+  .header__container {
+    margin-top: -1.5rem;
+    padding: 1rem 2rem;
+  }
+  .header__logo-img {
+    width: 50px;
+    height: 50px;
+  }
+  .header__logo-text {
+    font-size: 1.2rem;
+  }
+  .header__nav {
+    position: static;
+    height: auto;
+    overflow: visible;
+    padding: 0;
+  }
+  .header .header__menu {
+    display: flex;
+    flex-direction: row;
+    border-top: none;
+  }
+  .header .header__menu-item {
+    border-bottom: none;
+    padding: 0;
+    margin-right: 1.5rem;
+  }
+  .header .header__menu-item:last-child {
+    margin-right: 0;
+  }
+  .header__toggle {
+    display: none;
+  }
+}
+@media (min-width: 1024px) {
+  .header__container {
+    padding: 1.5rem 3rem;
+  }
+  .header__logo .header-text {
+    font-size: 1.3rem;
+  }
+  .header .header__menu-item {
+    margin-right: 2rem;
+  }
+}
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.services__item {
+  text-align: center;
+  margin: 1rem;
+}
+.services__icon {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s ease;
+}
+.services__icon:hover {
+  transform: scale(1.1);
+}
+.services__text {
+  margin-top: 0.5rem;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* Aspect Ratio 16:9 */
+  padding-top: 25px;
+  height: 0;
+  overflow: hidden;
+}
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 18px;
+  }
+  .header__nav {
+    display: block;
+  }
+  .header__menu-toggle {
+    display: none;
+  }
+  .menu {
+    display: flex;
+    flex-direction: row;
+  }
+  .menu__item {
+    margin: 0 1rem;
+  }
+}
+@media (min-width: 1024px) {
+  html {
+    font-size: 20px;
+  }
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #fff;
+  font-weight: 400;
+  color: #333;
+}
+
+header {
+  font-family: "Archivo", sans-serif;
+}
+
+.home__section-title {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+/*# sourceMappingURL=style.css.map */

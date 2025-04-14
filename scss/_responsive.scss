@@ -1,0 +1,31 @@
+@media (min-width: 768px) {
+    html {
+      font-size: 18px;
+    }
+    
+    .header {
+      &__nav {
+        display: block;  // Mostrar el menú por defecto en tablet
+      }
+      &__menu-toggle {
+        display: none; // Ocultar botón de menú en tablet
+      }
+    }
+  
+    .menu {
+      display: flex;
+      flex-direction: row;
+      &__item {
+        margin: 0 1rem;
+      }
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    html {
+      font-size: 20px;
+    }
+    
+
+  }
+  

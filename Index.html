@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Miranda - Home</title>
+  <link rel="icon" type="image/png" href="./assets/Logo.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="page">
+  <header class="header">
+    <!-- Fondo oscuro superior -->
+    <div class="header__background"></div>
+
+    <!-- Contenedor principal en blanco -->
+    <div class="header__container">
+      <!-- Botón hamburguesa / X (Mobile) -->
+      <button class="header__toggle" aria-label="Toggle Menu">
+        <i class="fas fa-bars"></i> <!-- Ícono 'X' -->
+      </button>
+
+      <!-- Logo -->
+      <div class="header__logo">
+        <img src="./assets/Logo.png" alt="Logo Hotel Miranda" class="header__logo-img" />
+        <span class="header__logo-text">
+          HOTEL<br>MIRANDA
+        </span>
+      </div>
+
+   
+          <!-- Menú desplegable -->
+    <nav class="header__nav">
+      <ul class="header__menu">
+        <li class="header__menu-item"><a class="header__menu-link" href="#">About Us</a></li>
+        <li class="header__menu-item"><a class="header__menu-link" href="#">Rooms</a></li>
+        <li class="header__menu-item"><a class="header__menu-link" href="#">Offers</a></li>
+        <li class="header__menu-item"><a class="header__menu-link" href="#">Contact</a></li>
+      </ul>
+    </nav>
+       <!-- Íconos de Usuario y Búsqueda -->
+       <div class="header__actions">
+        <button class="header__action-btn" aria-label="Cuenta">
+          <i class="fas fa-user"></i>
+        </button>
+        <button class="header__action-btn" aria-label="Buscar">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+  </header>
+    </div>
+
+
+
+  <!-- MAIN CONTENT -->
+  <main class="main">
+    <!-- Sección de Vídeo -->
+    <section class="home__video">
+      <h2 class="home__section-title">Descubre Hotel Miranda</h2>
+      <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Bu3Doe45lcU?start=25&end=75" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+          title="Video del hotel"></iframe>
+      </div>
+    </section>
+
+    <!-- Sección de Servicios -->
+    <section class="home__services" id="about-us">
+      <h2 class="home__section-title">Nuestros Servicios</h2>
+      <!-- <div class="services">
+
+        <div class="services__item">
+          <img src="images/service1.png" alt="Servicio 1" class="services__icon">
+          <p class="services__text">Servicio 1</p>
+        </div>
+        <div class="services__item">
+          <img src="images/service2.png" alt="Servicio 2" class="services__icon">
+          <p class="services__text">Servicio 2</p>
+        </div>
+        <div class="services__item">
+          <img src="images/service3.png" alt="Servicio 3" class="services__icon">
+          <p class="services__text">Servicio 3</p>
+        </div>
+      </div> -->
+    </section>
+
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p class="footer__text">© 2025 Hotel Miranda. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
