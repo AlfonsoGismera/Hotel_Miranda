@@ -88,11 +88,12 @@
   
   &__social-icons {
     display: flex;
-    gap: 0.5rem;
+    gap: 1.5rem;
+    font-size: 1.5rem;
     
     a img {
-      width: 20px;
-      height: 20px;
+      width: 24px;
+      height: 24px;
     }
   }
   

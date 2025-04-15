@@ -309,11 +309,12 @@
 }
 .info-section__social-icons {
   display: flex;
-  gap: 0.5rem;
+  gap: 1.5rem;
+  font-size: 1.5rem;
 }
 .info-section__social-icons a img {
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
 }
 .info-section__title {
   font-size: 1.1rem;
