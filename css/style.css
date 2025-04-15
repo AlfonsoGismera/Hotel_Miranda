@@ -235,11 +235,11 @@
   padding: 1rem 2rem;
   font-size: 0.8rem;
   font-weight: 700;
-  background-image: url("../assets/Footer_Trama.svg"); /* Reemplaza con la ruta correcta de tu imagen */
-  background-size: cover; /* Escala la imagen para cubrir todo el contenedor */
-  background-repeat: no-repeat; /* Evita que la imagen se repita */
-  background-position: center; /* Centra la imagen dentro del contenedor */
-  background-color: #f8f8f8; /* Un color de fondo de respaldo por si la imagen no carga */
+  background-image: url("../assets/Footer_Trama.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f8f8f8;
   /* Eliminamos display:flex en el root para tratarlo como bloque */
 }
 
@@ -278,7 +278,18 @@
   color: #555;
 }
 
-/* Info Section (Parte superior del footer) */
+.info-section__container > .info-section__column:nth-child(2) {
+  display: block;
+  gap: 2rem;
+}
+
+/* Cada UL ocupará la mitad del espacio */
+.info-section__container > .info-section__column:nth-child(2) .info-section__list {
+  display: inline-block;
+  vertical-align: top;
+  width: 48%;
+}
+
 .info-section {
   padding: 2rem 1rem;
   color: #444;
@@ -286,7 +297,7 @@
 }
 .info-section__container {
   display: flex;
-  flex-direction: column; /* mobile-first: columnas apiladas */
+  flex-direction: column;
   gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
@@ -299,7 +310,7 @@
 }
 .info-section__logo {
   display: block;
-  margin-bottom: 1rem;
+  margin: 0 2rem 1rem 0;
   width: 60px;
 }
 .info-section__description {
@@ -323,16 +334,12 @@
 }
 .info-section__list {
   list-style: none;
-  padding: 0;
-  margin: 0;
 }
 .info-section__list li {
   margin-bottom: 0.5rem;
 }
 .info-section__contact-list {
   list-style: none;
-  padding: 0;
-  margin: 0;
 }
 .info-section__contact-list li {
   margin-bottom: 1rem;
@@ -343,7 +350,20 @@
 @media (min-width: 768px) {
   .info-section__container {
     flex-direction: row;
+    gap: 8rem;
+  }
+  .info-section__container > .info-section__column:nth-child(2) {
+    display: block;
     gap: 2rem;
+  }
+  .info-section__container > .info-section__column:nth-child(2) .info-section__list {
+    display: inline-block;
+    vertical-align: top;
+    width: 48%;
+  }
+  .info-section__container > .info-section__column:nth-child(3) {
+    margin-left: 4rem;
+    align-items: flex-end;
   }
 }
 @media (min-width: 1024px) {
