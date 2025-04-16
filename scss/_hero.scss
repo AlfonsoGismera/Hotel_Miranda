@@ -1,26 +1,6 @@
-/* Botones básicos */
-.btn {
-  padding: 0.75rem 1.5rem;
-  border: none;
-  cursor: pointer;
-  font-weight: bold;
-  font-size: 1rem;
-  text-transform: uppercase;
-}
-
-.btn--gold {
-  color: #fff;
-  background-color: $primary-gold; 
-}
-
-.btn--gray {
-  color: #fff;
-  background-color: transparent; 
-  border: 2px solid #FFFFFF54;     
-}
-
 /* Hero Section */
 .hero {
+  margin-top: 3rem;
   background-color: #333333; 
   display: flex;
   color: #fff;
@@ -36,13 +16,13 @@
   }
   
   &__subtext {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
   }
   
   &__title {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
+    font-size: 3rem;
+    margin-bottom: 2rem;
   }
   
   &__buttons {
@@ -109,17 +89,21 @@
 ------------------------- */
 @media (min-width: 768px) {
   .hero {
+    &__title {
+      font-size: 5rem;
+    }
     &__info {
       padding: 4rem 2rem;
     }
     
-  
+    &__subtext {
+      font-size: 1.2rem;
+    }
     &__buttons {
       flex-direction: row;
       justify-content: flex-start;
       gap: 2rem;
     }
-    
 
     &__dates {
       flex-direction: row;
@@ -128,7 +112,6 @@
       justify-content: center;
     }
     
-    /* Cada campo ocupa el mismo ancho */
     .hero__date-field {
       flex: 1;
       
@@ -146,9 +129,5 @@
 }
 
 @media (min-width: 1024px) {
-  .hero {
-    &__title {
-      font-size: 3rem;
-    }
-  }
+
 }
