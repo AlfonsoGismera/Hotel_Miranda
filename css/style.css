@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap");
 .header {
   width: 100%;
   position: relative;
@@ -365,6 +364,124 @@
     width: 50%;
   }
 }
+.swiper_rooms {
+  padding: 2rem 1rem;
+  text-align: center;
+  background-color: #FFFFFF;
+  margin-bottom: 4rem;
+  padding: 8rem 0rem 9rem 0rem;
+  font-family: Old Standard TT, serif;
+  /* Cada slide se centra horizontalmente y permite overflow visible */
+  /* Contenedor de los emoticonos, en la parte superior central */
+  /* Bloque inferior de información de la habitación */
+  /* Controles de navegación  */
+}
+.swiper_rooms__subtitle {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-bottom: 0.5rem;
+}
+.swiper_rooms__title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 4rem;
+}
+.swiper_rooms__container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+.swiper_rooms__slide {
+  display: flex;
+  justify-content: center;
+  overflow: visible;
+}
+.swiper_rooms__image-container {
+  width: 100%;
+  max-width: 350px;
+  position: relative;
+  overflow: visible;
+  background-color: #f2f2f2;
+}
+.swiper_rooms__image {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  max-height: 250px;
+}
+.swiper_rooms__icons {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ffffff;
+  padding: 0.3rem 0.5rem;
+  display: flex;
+  gap: 0.3rem;
+  font-size: 0.9rem;
+  z-index: 10;
+  border: #000 solid 1px;
+}
+.swiper_rooms__info-box {
+  position: absolute;
+  bottom: -4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  background-color: #ffffff;
+  border: #000 solid 1px;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+.swiper_rooms__room-title {
+  font-size: 1.5rem;
+}
+.swiper_rooms__room-description {
+  font-size: 0.85rem;
+  color: #777777;
+  font-family: Roboto, serif;
+  margin: 0.25rem 0 0 0;
+}
+.swiper_rooms__room-price {
+  font-size: 1rem;
+  font-family: Archivo, serif;
+  color: #BEAD8E;
+  font-weight: 700;
+}
+.swiper_rooms .swiper-button-prev,
+.swiper_rooms .swiper-button-next {
+  --swiper-navigation-size: 20px;
+  width: 45px;
+  height: 45px;
+}
+.swiper_rooms .swiper-button-prev {
+  background-color: #ffffff;
+  color: #111111;
+}
+.swiper_rooms .swiper-button-next {
+  background-color: #BEAD8E;
+  color: #FFFFFF;
+}
+
+/* Responsivo */
+@media (min-width: 768px) {
+  .swiper_rooms {
+    padding: 6rem 0rem 9rem 0rem;
+  }
+  .swiper_rooms__title {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .swiper_rooms__title {
+    font-size: 3rem;
+  }
+}
 @media (min-width: 768px) {
   html {
     font-size: 14px;
@@ -537,10 +654,10 @@
 
 body {
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto, sans-serif;
   font-weight: 400;
   background-color: rgb(119, 160, 160);
-  color: #333;
+  color: #222222;
 }
 
 /* Botones básicos */

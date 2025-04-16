@@ -5,9 +5,9 @@
 @import './home/services';
 @import './home/video';
 @import './home/hero-video';
+@import './home/_swiper_rooms';
 @import './home/responsive';
-@import './home/footer';
-@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap');
+@import './home/footer';  
 
 * {
   box-sizing: border-box;
@@ -17,10 +17,10 @@
 
 body {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: Roboto, sans-serif;
   font-weight: 400;
   background-color: rgb(119, 160, 160);
-  color: #333;
+  color: #222222;
 }
 /* Botones básicos */
 .btn {

@@ -6,6 +6,7 @@
   <title>Hotel Miranda - Home</title>
   <link rel="icon" type="image/png" href="./assets/Logos/LogoM1.png" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -99,7 +100,21 @@
     </section>
 
     <!-- Sección de Servicios -->
-
+    <section class="swiper_rooms">
+      <h2 class="swiper_rooms__subtitle">ROOMS</h2>
+      <h1 class="swiper_rooms__title">Hand Picked Rooms</h1>
+      <div class="swiper-container swiper_rooms__container">
+        <div class="swiper-wrapper">
+          <!-- Aquí se inyectarán dinámicamente las slides -->
+        </div>
+        
+        <!-- Controles de Swiper -->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+    
 
 
   </main>
@@ -194,7 +209,7 @@
       </div>
     </div>
   </footer>   
-
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="js/main.js" type="module"></script>
 </body>
 
