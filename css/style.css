@@ -4,20 +4,14 @@
   width: 100%;
   position: relative;
   align-self: center;
-  /* Elimina “size: 2rem;” (no es propiedad válida) */
   background: linear-gradient(to bottom, #BEAD8E 50%, #333333 50%);
   /* Menú (nav) */
-  /* Estado activo para el menú, para que se muestre suavemente */
 }
 .header__background {
-  /* El fondo se mantiene aquí */
   position: relative;
-  /* Puedes definir un height específico si es necesario */
 }
 .header__background-text {
-  /* En mobile estará oculto */
   display: none;
-  /* Alineación, según tu ejemplo, se usa margen-left */
   margin-left: 8.3rem;
   color: #fff;
 }
@@ -81,16 +75,13 @@
   left: 0;
   width: 100%;
   z-index: 5;
-  /* Estado inicial: oculto mediante opacity y desplazado */
   opacity: 0;
   transform: translateY(-20px);
   pointer-events: none;
-  /* Unificamos la transición en ambas propiedades */
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
 .header__menu {
   list-style: none;
-  /* Opcional: remover márgenes y padding si ya se aplica globalmente */
   margin: 0;
   padding: 0;
 }
@@ -136,7 +127,6 @@
     font-size: 1.2rem;
   }
   .header__nav {
-    /* En tablet se muestra el menú en bloque sin la transición oculta */
     position: static;
     opacity: 1;
     transform: none;
@@ -283,7 +273,9 @@
   background-size: 1.2rem; /* Ajusta el tamaño del icono */
 }
 
-/* Media Queries para Tablet y Desktop */
+/* -------------------------
+   Media Queries para tablet y desktop
+------------------------- */
 @media (min-width: 768px) {
   .hero {
     /* Cada campo ocupa el mismo ancho */

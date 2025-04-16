@@ -2,20 +2,15 @@
   width: 100%;
   position: relative;
   align-self: center;
-  /* Elimina “size: 2rem;” (no es propiedad válida) */
   // background-color: $primary-gold;
   background: linear-gradient(to bottom, $primary-gold 50%, #333333 50%);
 
   &__background {
-    /* El fondo se mantiene aquí */
     position: relative;
-    /* Puedes definir un height específico si es necesario */
   }
 
   &__background-text {
-    /* En mobile estará oculto */
     display: none;
-    /* Alineación, según tu ejemplo, se usa margen-left */
     margin-left: 8.3rem;
     color: #fff;
   }
@@ -92,17 +87,14 @@
     left: 0;
     width: 100%;
     z-index: 5;
-    /* Estado inicial: oculto mediante opacity y desplazado */
     opacity: 0;
     transform: translateY(-20px);
     pointer-events: none;
-    /* Unificamos la transición en ambas propiedades */
     transition: opacity 0.5s ease, transform 0.5s ease;
   }
 
   &__menu {
     list-style: none;
-    /* Opcional: remover márgenes y padding si ya se aplica globalmente */
     margin: 0;
     padding: 0;
 
@@ -123,7 +115,6 @@
     }
   }
 
-  /* Estado activo para el menú, para que se muestre suavemente */
   &__nav--active {
     opacity: 1;
     transform: translateY(0);
@@ -156,7 +147,6 @@
       }
     }
     &__nav {
-      /* En tablet se muestra el menú en bloque sin la transición oculta */
       position: static;
       opacity: 1;
       transform: none;
