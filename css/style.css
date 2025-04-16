@@ -207,8 +207,6 @@
   color: #fff;
   flex-direction: column;
   align-items: center;
-  /* Bloque superior: info, título y botones */
-  /* Bloque inferior: Formulario de fechas con fondo negro */
 }
 .hero__info {
   padding: 2rem 1rem;
@@ -234,7 +232,6 @@
   width: 100%;
   background-color: #000;
   padding: 1.5rem 1rem;
-  /* En tablet/PC se solapará con el header */
 }
 .hero__dates {
   display: flex;
@@ -267,10 +264,10 @@
   appearance: none; /* Oculta los iconos nativos */
   -webkit-appearance: none;
   -moz-appearance: none;
-  background-image: url("../assets/Iconos/icono_date.svg"); /* Reemplaza con la ruta de tu imagen */
+  background-image: url("../assets/Iconos/icono_date.svg");
   background-repeat: no-repeat;
-  background-position: left center; /* Posiciona el icono a la izquierda y centrado verticalmente */
-  background-size: 1.2rem; /* Ajusta el tamaño del icono */
+  background-position: left center;
+  background-size: 1.2rem;
 }
 
 /* -------------------------
