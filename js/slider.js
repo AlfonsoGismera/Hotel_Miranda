@@ -50,13 +50,14 @@ const slidesData = [
               <img src="${item.image}" alt="${item.roomTitle}" class="swiper_rooms__image" />
               <!-- Emoticonos/íconos en la parte superior central -->
               <div class="swiper_rooms__icons">
-                <span>🏨</span>
-                <span>🍸</span>
-                <span>🛀</span>
-                <span>🔑</span>
-                <span>🍽</span>
-                <span>☕</span>
-                <span>📶</span>
+              <img src="../assets/icons/hotel.svg" alt="Hotel Icon">
+              <img src="./assets/icons/wifi.svg" alt="Wifi Icon">
+              <img src="./assets/icons/cocktail.svg" alt="Cocktail Icon">
+              <img src="./assets/icons/bathtub.svg" alt="Bathtub Icon">
+              <img src="./assets/icons/key.svg" alt="Key Icon">
+              <img src="./assets/icons/restaurant.svg" alt="Restaurant Icon">
+              <img src="./assets/icons/cup.svg" alt="Cup Icon">
+              
               </div>
               <!-- Bloque inferior con la información de la habitación -->
               <div class="swiper_rooms__info-box">
