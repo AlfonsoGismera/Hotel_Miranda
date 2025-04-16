@@ -1,11 +1,12 @@
 
 @import 'variables';
-@import 'header';
-@import 'hero';
-@import 'services';
-@import 'video';
-@import 'responsive';
-@import 'footer';
+@import './home/header';
+@import './home/hero';
+@import './home/services';
+@import './home/video';
+@import './home/hero-video';
+@import './home/responsive';
+@import './home/footer';
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap');
 
 * {
