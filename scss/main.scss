@@ -1,6 +1,7 @@
 
 @import 'variables';
 @import 'header';
+@import 'hero';
 @import 'services';
 @import 'video';
 @import 'responsive';
@@ -17,18 +18,7 @@ body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  background-color: aqua;
+  background-color: rgb(119, 160, 160);
   color: #333;
 }
 
-
-.home__section-title {
-  font-size: 1.5rem;
-  text-align: center;
-  margin: 1.5rem;
-}
-main {
-  padding: 2rem 0;
-  background-color: rgb(150, 140, 140);
-  color: $primary-black;
-}

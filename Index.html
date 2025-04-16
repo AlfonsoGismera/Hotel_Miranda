@@ -49,14 +49,39 @@
       </div>
     </div>
   </header>
-  
-  
-  
-  
-
 
   <!-- MAIN CONTENT -->
   <main class="main">
+<!-- Sección Hero -->
+<section class="hero">
+  <!-- Bloque superior: información, título y botones -->
+  <div class="hero__info">
+    <p class="hero__subtext">The Ultimate Luxury Experience</p>
+    <h1 class="hero__title">The Perfect Base For You</h1>
+    <div class="hero__buttons">
+      <button class="btn btn--gold">Take a Tour</button>
+      <button class="btn btn--gray">Learn More</button>
+    </div>
+  </div>
+
+  <!-- Bloque inferior: formulario de fechas (ocupa todo el ancho de la sección) -->
+  <div class="hero__dates-wrapper">
+    <form class="hero__dates" id="heroDatesForm">
+      <div class="hero__date-field">
+        <label for="arrival-date">Arrival Date</label>
+        <input type="date" id="arrival-date" name="arrival-date" required>
+      </div>
+      <div class="hero__date-field">
+        <label for="departure-date">Departure Date</label>
+        <input type="date" id="departure-date" name="departure-date" required>
+      </div>
+      <button type="submit" class="btn btn--gold hero__check-btn">Check Availability</button>
+    </form>
+  </div>
+</section>
+
+
+    
     <!-- Sección de Vídeo -->
     <section class="home__video">
       <h2 class="home__section-title">Descubre Hotel Miranda</h2>
@@ -68,24 +93,7 @@
     </section>
 
     <!-- Sección de Servicios -->
-    <section class="home__services" id="about-us">
-      <h2 class="home__section-title">Nuestros Servicios</h2>
-      <!-- <div class="services">
 
-        <div class="services__item">
-          <img src="images/service1.png" alt="Servicio 1" class="services__icon">
-          <p class="services__text">Servicio 1</p>
-        </div>
-        <div class="services__item">
-          <img src="images/service2.png" alt="Servicio 2" class="services__icon">
-          <p class="services__text">Servicio 2</p>
-        </div>
-        <div class="services__item">
-          <img src="images/service3.png" alt="Servicio 3" class="services__icon">
-          <p class="services__text">Servicio 3</p>
-        </div>
-      </div> -->
-    </section>
 
 
   </main>
@@ -181,7 +189,7 @@
     </div>
   </footer>   
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js" type="module"></script>
 </body>
 
 </html>

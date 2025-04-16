@@ -4,17 +4,22 @@
   width: 100%;
   position: relative;
   align-self: center;
-  size: 2rem;
-  background-color: #333;
+  /* Elimina “size: 2rem;” (no es propiedad válida) */
+  background: linear-gradient(to bottom, #BEAD8E 50%, #333333 50%);
+  /* Menú (nav) */
+  /* Estado activo para el menú, para que se muestre suavemente */
 }
 .header__background {
-  background-color: #BEAD8E;
+  /* El fondo se mantiene aquí */
   position: relative;
+  /* Puedes definir un height específico si es necesario */
 }
 .header__background-text {
+  /* En mobile estará oculto */
   display: none;
+  /* Alineación, según tu ejemplo, se usa margen-left */
   margin-left: 8.3rem;
-  color: tomato;
+  color: #fff;
 }
 .header__container {
   margin: 0 auto;
@@ -24,7 +29,6 @@
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem 1rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: relative;
 }
 .header__toggle {
@@ -42,6 +46,7 @@
   width: 36px;
   height: 36px;
   margin-right: 1rem;
+  box-shadow: 0px 14px 24px 0px rgba(139, 139, 139, 0.2509803922);
 }
 .header__logo-text {
   font-size: 1rem;
@@ -71,15 +76,23 @@
 }
 .header__nav {
   background-color: #fff;
-  display: none;
   position: absolute;
   top: 100%;
   left: 0;
   width: 100%;
   z-index: 5;
+  /* Estado inicial: oculto mediante opacity y desplazado */
+  opacity: 0;
+  transform: translateY(-20px);
+  pointer-events: none;
+  /* Unificamos la transición en ambas propiedades */
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 .header__menu {
   list-style: none;
+  /* Opcional: remover márgenes y padding si ya se aplica globalmente */
+  margin: 0;
+  padding: 0;
 }
 .header__menu-item {
   padding: 1rem;
@@ -95,13 +108,14 @@
   text-decoration: underline;
 }
 .header__nav--active {
-  display: block;
-  padding: 0.5rem 0;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
 }
 
-/* ----------------------------------------
+/* -------------------------
    Media Queries para tablet y desktop
----------------------------------------- */
+------------------------- */
 @media (min-width: 768px) {
   .header__background {
     height: 3rem;
@@ -122,7 +136,11 @@
     font-size: 1.2rem;
   }
   .header__nav {
+    /* En tablet se muestra el menú en bloque sin la transición oculta */
     position: static;
+    opacity: 1;
+    transform: none;
+    pointer-events: auto;
     display: block;
     height: auto;
     overflow: visible;
@@ -169,6 +187,134 @@
   }
   .header .header__menu-item {
     margin-right: 2rem;
+  }
+}
+/* Botones básicos */
+.btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.btn--gold {
+  color: #fff;
+  background-color: #BEAD8E;
+}
+
+.btn--gray {
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.3294117647);
+}
+
+/* Hero Section */
+.hero {
+  background-color: #333333;
+  display: flex;
+  color: #fff;
+  flex-direction: column;
+  align-items: center;
+  /* Bloque superior: info, título y botones */
+  /* Bloque inferior: Formulario de fechas con fondo negro */
+}
+.hero__info {
+  padding: 2rem 1rem;
+  text-align: left;
+  width: 100%;
+  max-width: 1200px;
+}
+.hero__subtext {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+.hero__title {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+.hero__buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.hero__dates-wrapper {
+  width: 100%;
+  background-color: #000;
+  padding: 1.5rem 1rem;
+  /* En tablet/PC se solapará con el header */
+}
+.hero__dates {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.hero__date-field {
+  display: flex;
+  flex-direction: column;
+}
+.hero__date-field label {
+  font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+}
+.hero__check-btn {
+  align-self: center;
+  height: 100%;
+  margin-top: 0;
+}
+.hero .hero__date-field input[type=date] {
+  width: 100%;
+  padding: 10px 10px 10px 35px; /* Añade padding a la izquierda para el icono */
+  border: none;
+  border-bottom: 1px solid #BEAD8E;
+  background-color: transparent;
+  color: #686868;
+  font-size: 1rem;
+  appearance: none; /* Oculta los iconos nativos */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("../assets/Iconos/icono_date.svg"); /* Reemplaza con la ruta de tu imagen */
+  background-repeat: no-repeat;
+  background-position: left center; /* Posiciona el icono a la izquierda y centrado verticalmente */
+  background-size: 1.2rem; /* Ajusta el tamaño del icono */
+}
+
+/* Media Queries para Tablet y Desktop */
+@media (min-width: 768px) {
+  .hero {
+    /* Cada campo ocupa el mismo ancho */
+    /* Aseguramos que el botón tenga la misma altura */
+  }
+  .hero__info {
+    padding: 4rem 2rem;
+  }
+  .hero__buttons {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 2rem;
+  }
+  .hero__dates {
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+  }
+  .hero .hero__date-field {
+    flex: 1;
+  }
+  .hero .hero__check-btn {
+    margin-top: 1.2rem;
+    height: 3rem;
+    white-space: nowrap;
+  }
+}
+@media (min-width: 1024px) {
+  .hero__title {
+    font-size: 3rem;
   }
 }
 .services {
@@ -381,20 +527,8 @@ body {
   margin: 0;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  background-color: aqua;
+  background-color: rgb(119, 160, 160);
   color: #333;
-}
-
-.home__section-title {
-  font-size: 1.5rem;
-  text-align: center;
-  margin: 1.5rem;
-}
-
-main {
-  padding: 2rem 0;
-  background-color: rgb(150, 140, 140);
-  color: #222222;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -2,19 +2,22 @@
   width: 100%;
   position: relative;
   align-self: center;
-  size: 2rem;
-  background-color: #333;
+  /* Elimina “size: 2rem;” (no es propiedad válida) */
+  // background-color: $primary-gold;
+  background: linear-gradient(to bottom, $primary-gold 50%, #333333 50%);
 
   &__background {
-    background-color: $primary-gold;  
-    position: relative; 
+    /* El fondo se mantiene aquí */
+    position: relative;
+    /* Puedes definir un height específico si es necesario */
   }
 
   &__background-text {
+    /* En mobile estará oculto */
     display: none;
-
+    /* Alineación, según tu ejemplo, se usa margen-left */
     margin-left: 8.3rem;
-    color: tomato;  
+    color: #fff;
   }
 
   &__container {
@@ -25,8 +28,8 @@
     align-items: center;
     justify-content: space-between;
     padding: 0.5rem 1rem;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    position: relative; 
+
+    position: relative;
   }
 
   &__toggle {
@@ -41,10 +44,13 @@
   &__logo {
     display: flex;
     
+
+    
     &-img {
       width: 36px;
       height: 36px;
       margin-right: 1rem;
+      box-shadow: 0px 14px 24px 0px #8B8B8B40;
     }
 
     &-text {
@@ -54,7 +60,6 @@
     }
     &-first-word {
       font-size: 1.2rem;
-
       font-weight: bold;
       color: $primary-gold;
     }
@@ -74,29 +79,35 @@
     padding: 0.6rem;
     border: none;
 
-    
     &:hover {
       color: #555;
     }
   }
 
-  // Menú
+  /* Menú (nav) */
   &__nav {
     background-color: #fff;
-    display: none; 
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
     z-index: 5;
+    /* Estado inicial: oculto mediante opacity y desplazado */
+    opacity: 0;
+    transform: translateY(-20px);
+    pointer-events: none;
+    /* Unificamos la transición en ambas propiedades */
+    transition: opacity 0.5s ease, transform 0.5s ease;
   }
 
   &__menu {
     list-style: none;
+    /* Opcional: remover márgenes y padding si ya se aplica globalmente */
+    margin: 0;
+    padding: 0;
 
     &-item {
       padding: 1rem;
-
     }
 
     &-link {
@@ -112,41 +123,44 @@
     }
   }
 
+  /* Estado activo para el menú, para que se muestre suavemente */
   &__nav--active {
-    display: block;
-    padding: 0.5rem 0;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
   }
 }
 
-/* ----------------------------------------
+
+/* -------------------------
    Media Queries para tablet y desktop
----------------------------------------- */
+------------------------- */
 @media (min-width: 768px) {
   .header {
     &__background {
       height: 3rem;
     }
-
     &__container {
       width: 80%;
       margin-top: -2rem;
       padding: 1rem 2rem;
     }
-
     &__logo {
       margin: 0.5rem 3rem 1rem 0;
       &-img {
         width: 50px;
         height: 50px;
-        
       }
       &-text {
         font-size: 1.2rem;
       }
     }
-    
     &__nav {
+      /* En tablet se muestra el menú en bloque sin la transición oculta */
       position: static;
+      opacity: 1;
+      transform: none;
+      pointer-events: auto;
       display: block;
       height: auto;
       overflow: visible;
@@ -154,8 +168,8 @@
     }
     &__action-btn {
       border: 2px solid #8585854D;
-}
-
+    }
+    
     .header__menu {
       display: flex;
       flex-direction: row;
@@ -169,7 +183,6 @@
         }
       }
     }
-
     &__toggle {
       display: none;
     }
@@ -185,7 +198,6 @@
     &__background-text {
       display: block;
     }
-
     &__container {
       width: 80%;
       margin-top: -3rem;
@@ -193,12 +205,9 @@
     }
     &__logo {
       margin: 0.5rem 10rem 1rem 0;
-      }
-    
+    }
     &__logo &-text {
       font-size: 1.3rem;
-
-      
     }
     .header__menu {
       &-item {
