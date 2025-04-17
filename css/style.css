@@ -581,7 +581,6 @@ p {
   background-repeat: no-repeat;
   background-position: center;
   background-color: #f8f8f8;
-  /* Eliminamos display:flex en el root para tratarlo como bloque */
 }
 
 /* Footer Bottom: contendrá el copy y los links */
@@ -589,8 +588,6 @@ p {
   border-top: 1px solid #ccc;
   padding-top: 1rem;
   margin-top: 2rem;
-  /* Usamos flex para alinear en una línea; si se desea que queden
-     en filas separadas, se puede ajustar flex-direction */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -663,10 +660,12 @@ p {
   display: flex;
   gap: 1.5rem;
   font-size: 1.5rem;
+  --swiper-theme-color: #070707;
 }
 .info-section__social-icons a img {
   width: 24px;
   height: 24px;
+  --swiper-theme-color: #070707;
 }
 .info-section__title {
   font-size: 1.1rem;

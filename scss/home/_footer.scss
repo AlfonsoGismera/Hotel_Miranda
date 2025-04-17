@@ -1,18 +1,13 @@
 /* Footer General */
 .footer {
-  // background-color: #f8f8f8;
   padding: 1rem 2rem;
   font-size: 0.8rem;
   font-weight: 700;
-  background-image: url('../assets/Footer_Trama.svg'); 
-  background-size: cover; 
+  background-image: url("../assets/Footer_Trama.svg");
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: center; 
+  background-position: center;
   background-color: #f8f8f8;
-   
-
-  
-  /* Eliminamos display:flex en el root para tratarlo como bloque */
 }
 
 /* Footer Bottom: contendrá el copy y los links */
@@ -20,9 +15,6 @@
   border-top: 1px solid #ccc;
   padding-top: 1rem;
   margin-top: 2rem;
-  
-  /* Usamos flex para alinear en una línea; si se desea que queden
-     en filas separadas, se puede ajustar flex-direction */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -38,11 +30,11 @@
   color: #555;
   text-decoration: none;
   margin: 0 0.5rem;
-  
+
   &:first-child {
     margin-left: 0;
   }
-  
+
   &:hover {
     text-decoration: underline;
   }
@@ -58,74 +50,76 @@
   gap: 2rem;
 }
 /* Cada UL ocupará la mitad del espacio */
-.info-section__container > .info-section__column:nth-child(2) .info-section__list {
-   display: inline-block;
-    vertical-align: top;
-    width: 48%;
+.info-section__container
+  > .info-section__column:nth-child(2)
+  .info-section__list {
+  display: inline-block;
+  vertical-align: top;
+  width: 48%;
 }
 .info-section {
   padding: 2rem 1rem;
   color: #444;
   border: #000000 1px solid;
-  
+
   &__container {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
   }
-  
+
   &__column {
     flex: 1;
   }
-  
+
   &__logo-and-text {
     margin-bottom: 1rem;
   }
-  
+
   &__logo {
     display: block;
     margin: 0 2rem 1rem 0;
     width: 60px;
-
   }
-  
+
   &__description {
     font-size: 0.9rem;
     line-height: 1.5;
     margin-bottom: 1rem;
   }
-  
+
   &__social-icons {
     display: flex;
     gap: 1.5rem;
     font-size: 1.5rem;
-    
+    --swiper-theme-color: #070707;
+
     a img {
       width: 24px;
       height: 24px;
+      --swiper-theme-color: #070707;
     }
   }
-  
+
   &__title {
     font-size: 1.1rem;
     margin-bottom: 1rem;
     font-weight: 700;
   }
-  
+
   &__list {
     list-style: none;
-    
+
     li {
       margin-bottom: 0.5rem;
     }
   }
-  
+
   &__contact-list {
     list-style: none;
 
-    
     li {
       margin-bottom: 1rem;
       line-height: 1.4;
@@ -144,11 +138,12 @@
     gap: 2rem;
   }
 
-  .info-section__container > .info-section__column:nth-child(2) .info-section__list {
+  .info-section__container
+    > .info-section__column:nth-child(2)
+    .info-section__list {
     display: inline-block;
     vertical-align: top;
     width: 48%;
-
   }
   .info-section__container > .info-section__column:nth-child(3) {
     margin-left: 4rem;
