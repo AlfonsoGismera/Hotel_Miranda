@@ -6,6 +6,7 @@
 @import './home/video';
 @import './home/hero-video';
 @import './home/_swiper_rooms';
+@import './home/_core_white';
 @import './home/responsive';
 @import './home/footer';  
 
@@ -16,11 +17,19 @@
 }
 
 body {
-  margin: 0;
   font-family: Roboto, sans-serif;
   font-weight: 400;
   background-color: rgb(119, 160, 160);
   color: #222222;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: Old Standard TT, sans-serif;
+  font-weight: 700;
+  font-size: 4rem;
+}
+p {
+  font-size: 14px;
+
 }
 /* Botones básicos */
 .btn {

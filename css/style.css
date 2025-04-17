@@ -365,7 +365,6 @@
   }
 }
 .swiper_rooms {
-  padding: 2rem 1rem;
   text-align: center;
   background-color: #FFFFFF;
   margin-bottom: 4rem;
@@ -377,14 +376,13 @@
   /* Controles de navegación  */
 }
 .swiper_rooms__subtitle {
-  font-size: 1rem;
-  text-transform: uppercase;
+  font-size: 0.9rem;
   letter-spacing: 0.1rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 4rem;
+  font-weight: 700;
+  color: #777777;
 }
 .swiper_rooms__title {
-  font-size: 2rem;
-  font-weight: 700;
   margin-bottom: 4rem;
 }
 .swiper_rooms__container {
@@ -486,29 +484,93 @@
     font-size: 3rem;
   }
 }
+p {
+  font-family: Archivo, sans-serif;
+}
+
+.core_white {
+  background-color: #fff;
+  padding: 6rem 2rem 6rem 2rem;
+  /* Paginación sólo en móvil */
+}
+.core_white__container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+.core_white__subtitle {
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 4rem;
+  font-weight: 700;
+  color: #777777;
+}
+.core_white__title {
+  font-weight: 700;
+  margin-bottom: 5rem;
+  color: #000;
+}
+.core_white__swiper {
+  width: 100%;
+  position: relative;
+}
+.core_white__features {
+  display: flex;
+}
 @media (min-width: 768px) {
-  html {
-    font-size: 14px;
+  .core_white__features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
   }
-  .header__nav {
-    display: block;
-  }
-  .header__menu-toggle {
+}
+.core_white__feature-card {
+  padding: 5rem 0em 2rem 1rem;
+  position: relative;
+  text-align: left;
+  overflow: visible;
+  /* Número en esquina superior derecha */
+  /* Icono grande centrado al inicio */
+}
+.core_white__feature-card .core_white__number {
+  position: absolute;
+  top: 0.5rem;
+  right: 0rem;
+  font-size: 6.2rem;
+  color: rgba(34, 34, 34, 0.0392156863);
+  font-weight: bold;
+}
+.core_white__feature-card .core_white__icon {
+  display: block;
+  width: 70px;
+  height: 70px;
+  margin-bottom: 2rem;
+}
+.core_white__feature-card .core_white__card-title {
+  font-size: 1.1rem;
+  margin: 0 0 0.5rem;
+}
+.core_white__feature-card .core_white__card-text {
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: #777777;
+}
+.core_white__pagination {
+  margin-top: 1.5rem;
+}
+.core_white__pagination .swiper-pagination-bullet {
+  background: #000;
+  opacity: 0.3;
+}
+.core_white__pagination .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+@media (min-width: 768px) {
+  .core_white__pagination {
     display: none;
   }
-  .menu {
-    display: flex;
-    flex-direction: row;
-  }
-  .menu__item {
-    margin: 0 1rem;
-  }
 }
-@media (min-width: 1024px) {
-  html {
-    font-size: 16px;
-  }
-}
+
 /* Footer General */
 .footer {
   padding: 1rem 2rem;
@@ -657,11 +719,20 @@
 }
 
 body {
-  margin: 0;
   font-family: Roboto, sans-serif;
   font-weight: 400;
   background-color: rgb(119, 160, 160);
   color: #222222;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Old Standard TT, sans-serif;
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+p {
+  font-size: 14px;
 }
 
 /* Botones básicos */
