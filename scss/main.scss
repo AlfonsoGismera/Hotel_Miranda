@@ -1,4 +1,4 @@
-
+// Home y bases de página
 @import 'variables';
 @import './home/header';
 @import './home/hero';
@@ -9,7 +9,9 @@
 @import './home/core_white';
 @import './home/projects_black';
 @import './home/responsive';
-@import './home/footer';  
+@import './home/footer'; 
+// About us
+@import './about_us/core_black'; 
 
 * {
   box-sizing: border-box;

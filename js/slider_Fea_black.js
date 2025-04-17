@@ -1,5 +1,5 @@
 // sliderFeatures.js
-export default function initCoreFeaturesSwiper() {
+export default function initCoreFeaturesSwiper_black() {
     // Inicializamos Swiper sólo en móvil (<768px)
     const swiper = new Swiper(".core_white__swiper", {
       slidesPerView: 1,

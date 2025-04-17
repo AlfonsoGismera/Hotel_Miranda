@@ -1,7 +1,7 @@
 p {
     font-family: Archivo, sans-serif;
 }
-.core_white {
+.core_black {
     background-color: #fff;
     padding: 6rem 2rem 6rem 2rem;
    
@@ -49,7 +49,7 @@ p {
       overflow: visible;
   
       /* Número en esquina superior derecha */
-      .core_white__number {
+      .core_black__number {
         position: absolute;
         top: 0.5rem;
         right: 0rem;
@@ -59,19 +59,19 @@ p {
       }
   
       /* Icono grande centrado al inicio */
-      .core_white__icon {
+      .core_black__icon {
         display: block;
         width: 70px;
         height: 70px;
         margin-bottom: 2rem;
       }
   
-      .core_white__card-title {
+      .core_black__card-title {
         font-size: 1.1rem;
         margin: 0 0 0.5rem;
       }
   
-      .core_white__card-text {
+      .core_black__card-text {
         font-size: 0.85rem;
         line-height: 1.4;
         color: #777777;
