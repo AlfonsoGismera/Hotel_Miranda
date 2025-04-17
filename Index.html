@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hotel Miranda - Home</title>
   <link rel="icon" type="image/png" href="./assets/logos/LogoM1.png" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page">
   <header class="header">
     <p class="header__background-text">We Make Your Feel Comfortable</p>
-    
+
     <div class="header__background">
 
     </div>
@@ -22,14 +23,14 @@
       <button class="header__toggle" aria-label="Toggle Menu">
         <i class="fas fa-bars"></i>
       </button>
-  
+
       <div class="header__logo">
         <img src="./assets/logos/LogoM2.png" alt="Logo Hotel Miranda" class="header__logo-img" />
         <span class="header__logo-text">
           <span class="header__logo-first-word">HOTEL</span><br>MIRANDA
         </span>
       </div>
-  
+
       <nav class="header__nav">
         <ul class="header__menu">
           <li class="header__menu-item"><a class="header__menu-link" href="#">About Us</a></li>
@@ -38,7 +39,7 @@
           <li class="header__menu-item"><a class="header__menu-link" href="#">Contact</a></li>
         </ul>
       </nav>
-  
+
       <div class="header__actions">
         <button class="header__action-btn" aria-label="Cuenta">
           <i class="fas fa-user"></i>
@@ -52,39 +53,39 @@
 
   <!-- MAIN -->
   <main class="main">
-<!-- Sección Hero -->
-<section class="hero">
-  <!-- Bloque superior: información, título y botones -->
-  <div class="hero__info">
-    <p class="hero__subtext">The Ultimate Luxury Experience</p>
-    <h1 class="hero__title">The Perfect <br>Base For You</h1>
-    <div class="hero__buttons">
-      <button class="btn btn--gold">Take a Tour</button>
-      <button class="btn btn--gray">Learn More</button>
-    </div>
-  </div>
+    <!-- Sección Hero -->
+    <section class="hero">
+      <!-- Bloque superior: información, título y botones -->
+      <div class="hero__info">
+        <p class="hero__subtext">The Ultimate Luxury Experience</p>
+        <h1 class="hero__title">The Perfect <br>Base For You</h1>
+        <div class="hero__buttons">
+          <button class="btn btn--gold">Take a Tour</button>
+          <button class="btn btn--gray">Learn More</button>
+        </div>
+      </div>
 
-  <!-- Bloque inferior: formulario de fechas  -->
-  <div class="hero__dates-wrapper">
-    <form class="hero__dates" id="heroDatesForm">
-      <div class="hero__date-field">
-        <label for="arrival-date">Arrival Date</label>
-        <input type="date" id="arrival-date" name="arrival-date" required>
+      <!-- Bloque inferior: formulario de fechas  -->
+      <div class="hero__dates-wrapper">
+        <form class="hero__dates" id="heroDatesForm">
+          <div class="hero__date-field">
+            <label for="arrival-date">Arrival Date</label>
+            <input type="date" id="arrival-date" name="arrival-date" required>
+          </div>
+          <div class="hero__date-field">
+            <label for="departure-date">Departure Date</label>
+            <input type="date" id="departure-date" name="departure-date" required>
+          </div>
+          <button type="submit" class="btn btn--gold hero__check-btn">Check Availability</button>
+        </form>
       </div>
-      <div class="hero__date-field">
-        <label for="departure-date">Departure Date</label>
-        <input type="date" id="departure-date" name="departure-date" required>
-      </div>
-      <button type="submit" class="btn btn--gold hero__check-btn">Check Availability</button>
-    </form>
-  </div>
-</section>
-  
+    </section>
+
     <!-- Sección de Vídeo -->
     <section class="hero-video">
       <div class="hero-video__container">
         <div class="hero-video__text-content">
-          <h2 class="hero-video__title">Meet With Our 
+          <h2 class="hero-video__title">Meet With Our
             Luxury Place.</h2>
           <p class="hero-video__description">
             Immerse yourself in unforgettable experiences and create memories that will last a lifetime.
@@ -93,9 +94,9 @@
           <button class="btn btn--gold hero-video__button">Explore Now</button>
         </div>
         <div class="hero-video__video-wrapper">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/Bu3Doe45lcU?start=25&end=75" frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
-            title="Video del hotel"></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/Bu3Doe45lcU?start=25&end=75"
+            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen title="Video del hotel"></iframe>
         </div>
       </div>
     </section>
@@ -108,7 +109,7 @@
         <div class="swiper-wrapper">
           <!-- Aquí se inyectarán dinámicamente las slides -->
         </div>
-        
+
         <!-- Controles de Swiper -->
         <div class="swiper-pagination"></div>
         <div class="swiper-button-prev"></div>
@@ -119,7 +120,7 @@
       <div class="core_white__container">
         <p class="core_white__subtitle">FACILITIES</p>
         <h2 class="core_white__title">Core Features</h2>
-    
+
         <!-- Swiper wrapper (en móvil será slider; en desktop se verá como grid) -->
         <div class="swiper-container core_white__swiper">
           <div class="swiper-wrapper core_white__features">
@@ -182,8 +183,58 @@
         </div>
       </div>
     </section>
-    
-    
+    <!-- comida -->
+
+    <section class="projects_black">
+      <div class="projects_black__container">
+        <!-- Card 01 -->
+        <div class="projects_black__card">
+          <img src="../assets/icons/rocket.svg" alt="" class="projects_black__icon" />
+          <div class="projects_black__stat">
+            <span class="projects_black__number">
+              84k<span class="projects_black__suffix">+</span>
+            </span>
+          </div>
+          <p class="projects_black__label">Projects Completed</p>
+        </div>
+
+        <!-- Card 02 -->
+        <div class="projects_black__card">
+          <img src="../assets/icons/family.svg" alt="" class="projects_black__icon" />
+          <div class="projects_black__stat">
+            <span class="projects_black__number">
+              10M<span class="projects_black__suffix">+</span>
+            </span>
+          </div>
+          <p class="projects_black__label">Active Backers Around World</p>
+        </div>
+
+        <!-- Card 03 -->
+        <div class="projects_black__card">
+          <img src="../assets/icons/tax.svg" alt="" class="projects_black__icon" />
+          <div class="projects_black__stat">
+            <span class="projects_black__number">
+              02k<span class="projects_black__suffix">+</span>
+            </span>
+          </div>
+          <p class="projects_black__label">Categories Served</p>
+        </div>
+
+        <!-- Card 04 -->
+        <div class="projects_black__card">
+          <img src="../assets/icons/book.svg" alt="" class="projects_black__icon" />
+          <div class="projects_black__stat">
+            <span class="projects_black__number">
+              100M<span class="projects_black__suffix">+</span>
+            </span>
+          </div>
+          <p class="projects_black__label">Idea Raised Funds</p>
+        </div>
+      </div>
+    </section>
+
+
+
 
 
   </main>
@@ -197,15 +248,13 @@
         <div class="info-section__column">
           <div class="info-section__logo-and-text">
             <div class="header__logo">
-            <img
-              src="./assets/logos/LogoM2_invertido.png" alt="Hotel Miranda Logo" class="info-section__logo" 
-            />
-            <span class="header__logo-text">
-              <span class="header__logo-first-word">HOTEL</span><br>MIRANDA
-            </span>
-          </div>
+              <img src="./assets/logos/LogoM2_invertido.png" alt="Hotel Miranda Logo" class="info-section__logo" />
+              <span class="header__logo-text">
+                <span class="header__logo-first-word">HOTEL</span><br>MIRANDA
+              </span>
+            </div>
             <p class="info-section__description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed adipiscing nisl in 
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed adipiscing nisl in
               massa tempor volutpat. Vivamus a nisl vel nibh maximus luctus euismod quis eros.
             </p>
           </div>
@@ -216,7 +265,7 @@
             <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
           </div>
         </div>
-    
+
         <!-- Columna Central (Servicios) -->
         <div class="info-section__column">
           <h2 class="info-section__title">Services.</h2>
@@ -238,14 +287,14 @@
           </ul>
 
         </div>
-    
+
         <!-- Columna Derecha (Contact Info) -->
         <div class="info-section__column">
           <h2 class="info-section__title">Contact Us</h2>
           <ul class="info-section__contact-list">
             <li>
               <span class="info-section__contact-icon">
-                <i class="fas fa-phone-alt"></i> 
+                <i class="fas fa-phone-alt"></i>
               </span>
               Phone Number<br /> +00 123 4567 8910
             </li>
@@ -265,7 +314,7 @@
         </div>
       </div>
     </section>
-    
+
     <!-- Parte inferior: footer bottom -->
     <div class="footer__bottom">
       <p class="footer__copyright">
@@ -277,9 +326,9 @@
         <a href="#">Privacy &amp; Environmental Policy</a>
       </div>
     </div>
-  </footer>   
+  </footer>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="js/main.js" type="module"></script>
 </body>
 
-</html> 
+</html>

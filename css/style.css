@@ -3,7 +3,7 @@
   width: 100%;
   position: relative;
   align-self: center;
-  background: linear-gradient(to bottom, #BEAD8E 50%, #333333 50%);
+  background: linear-gradient(to bottom, #BEAD8E 50%, #222222 50%);
   /* Menú (nav) */
 }
 .header__background {
@@ -571,6 +571,68 @@ p {
   }
 }
 
+.projects_black {
+  padding: 3rem 1rem;
+  color: #fff;
+  text-align: center;
+  /* Icono encima del número */
+  /* Número principal grande */
+  /* Sufijo pequeño (“+”) */
+  /* Etiqueta descriptiva */
+  /* TABLET+ (≥768px): fila horizontal */
+}
+.projects_black__container {
+  background-color: #222222;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.projects_black__card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.projects_black__icon {
+  width: 50px;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+.projects_black__stat {
+  margin-bottom: 0.5rem;
+}
+.projects_black__number {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+}
+.projects_black__suffix {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-left: 0.25rem;
+}
+.projects_black__label {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin: 0;
+  line-height: 1.4;
+  max-width: 200px;
+}
+@media (min-width: 768px) {
+  .projects_black__container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+  .projects_black__card {
+    flex: 1;
+    width: auto;
+  }
+}
+
 /* Footer General */
 .footer {
   padding: 1rem 2rem;
@@ -720,7 +782,7 @@ p {
 body {
   font-family: Roboto, sans-serif;
   font-weight: 400;
-  background-color: rgb(119, 160, 160);
+  background-color: #222222;
   color: #222222;
 }
 
