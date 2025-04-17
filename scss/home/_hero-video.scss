@@ -1,5 +1,5 @@
 .hero-video {
-  background: linear-gradient(to right, #222222 70%, $primary-gold 30%);
+  background: #222222 ;
   padding-top: 6rem;
   padding-bottom: 6rem;
 
@@ -48,7 +48,9 @@
 
 /* Media query para pantallas más grandes (ejemplo: tablet en adelante) */
 @media (min-width: 768px) {
+  
   .hero-video {
+    background: linear-gradient(to right, #222222 70%, $primary-gold 30%); 
     &__container {
       display: flex; 
       flex-direction: row; 

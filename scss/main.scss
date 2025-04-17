@@ -1,9 +1,9 @@
 // Home y bases de página
 @import 'variables';
 @import './home/header';
+@import './home/discovere';
 @import './home/hero';
 @import './home/services';
-@import './home/video';
 @import './home/hero-video';
 @import './home/swiper_rooms';
 @import './home/core_white';
@@ -29,9 +29,11 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Old Standard TT, sans-serif;
   font-weight: 700;
   font-size: 4rem;
+  line-height: 1.2;
 }
 p {
   font-size: 14px;
+  line-height: 24px;
 
 }
 /* Botones básicos */
