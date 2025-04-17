@@ -806,8 +806,9 @@ p {
 }
 
 .core_black {
-  background-color: #fff;
+  background-color: #222222;
   padding: 6rem 2rem 6rem 2rem;
+  color: #FFFFFF;
   /* Paginación sólo en móvil */
 }
 .core_black__container {
@@ -820,12 +821,11 @@ p {
   letter-spacing: 0.1rem;
   margin-bottom: 4rem;
   font-weight: 700;
-  color: #777777;
+  color: #C2C2C2;
 }
 .core_black__title {
   font-weight: 700;
   margin-bottom: 5rem;
-  color: #000;
 }
 .core_black__swiper {
   width: 100%;
@@ -854,7 +854,7 @@ p {
   top: 0.5rem;
   right: 0rem;
   font-size: 6.2rem;
-  color: rgba(34, 34, 34, 0.0392156863);
+  color: #C2C2C2;
   font-weight: bold;
 }
 .core_black__feature-card .core_black__icon {
@@ -870,13 +870,12 @@ p {
 .core_black__feature-card .core_black__card-text {
   font-size: 0.85rem;
   line-height: 1.4;
-  color: #777777;
 }
 .core_black__pagination {
   margin-top: 1.5rem;
 }
 .core_black__pagination .swiper-pagination-bullet {
-  background: #000;
+  background: #C2C2C2;
   opacity: 0.3;
 }
 .core_black__pagination .swiper-pagination-bullet-active {

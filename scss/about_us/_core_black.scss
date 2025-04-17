@@ -2,8 +2,9 @@ p {
     font-family: Archivo, sans-serif;
 }
 .core_black {
-    background-color: #fff;
+    background-color: #222222;
     padding: 6rem 2rem 6rem 2rem;
+    color: #FFFFFF;
    
   
     &__container {
@@ -17,13 +18,13 @@ p {
         letter-spacing: 0.1rem;
         margin-bottom: 4rem;
         font-weight: 700;
-        color: #777777;
+        color: #C2C2C2;
     }
   
     &__title {
       font-weight: 700;
       margin-bottom: 5rem;
-      color: #000;
+      
     }
   
     &__swiper {
@@ -47,6 +48,7 @@ p {
       position: relative;
       text-align: left;
       overflow: visible;
+      // background-color: #292929;
   
       /* Número en esquina superior derecha */
       .core_black__number {
@@ -54,7 +56,7 @@ p {
         top: 0.5rem;
         right: 0rem;
         font-size: 6.2rem;
-        color: #2222220A;
+        color: #C2C2C2;
         font-weight: bold;
       }
   
@@ -74,7 +76,6 @@ p {
       .core_black__card-text {
         font-size: 0.85rem;
         line-height: 1.4;
-        color: #777777;
 
       }
     }
@@ -83,7 +84,7 @@ p {
     &__pagination {
       margin-top: 1.5rem;
       .swiper-pagination-bullet {
-        background: #000;
+        background: #C2C2C2;
         opacity: 0.3;
       }
       .swiper-pagination-bullet-active {
