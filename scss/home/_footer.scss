@@ -171,7 +171,7 @@
 @media (min-width: 768px) {
   .info-section__container {
     flex-direction: row;
-    gap: 8rem;
+    gap: 2rem;
   }
   .info-section__container > .info-section__column:nth-child(2) {
     display: block;
@@ -183,10 +183,10 @@
     .info-section__list {
     display: inline-block;
     vertical-align: top;
-    width: 48%;
+    width: 49%;
   }
   .info-section__container > .info-section__column:nth-child(3) {
-    margin-left: 4rem;
+    margin-left: 2rem;
     align-items: flex-end;
   }
 }
