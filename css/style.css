@@ -43,7 +43,7 @@
   font-size: 1rem;
   line-height: 1.2;
   margin-top: 0.5rem;
-  color: #000;
+  font-family: "Archivo", sans-serif;
 }
 .header__logo-first-word {
   font-size: 1.2rem;
@@ -810,7 +810,7 @@ p {
   background-position: center;
   background-color: #f8f8f8;
   color: #777777;
-  padding: 3rem 0rem 0 3rem;
+  padding: 3rem 0rem 0 0rem;
 }
 
 /* Footer Bottom: contendrá el copy y los links */
@@ -821,6 +821,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #f8f8f8;
 }
 
 /* Footer Links */
@@ -830,6 +831,7 @@ p {
 }
 
 .footer__links a {
+  color: #222222;
   text-decoration: none;
   margin: 0 0.5rem;
 }
@@ -857,7 +859,7 @@ p {
 }
 
 .info-section {
-  color: #444;
+  padding-left: 1rem;
 }
 .info-section__container {
   display: flex;
@@ -870,6 +872,7 @@ p {
 .info-section__logo-and-text {
   margin-bottom: 1rem;
   font-size: 1.2rem;
+  font-family: "Archivo", sans-serif;
 }
 .info-section__logo-first-word {
   font-size: 1.2rem;
@@ -899,7 +902,7 @@ p {
   width: 80px;
   height: 80px;
   flex-shrink: 0;
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
   transition: background-color 0.3s ease;
 }
 .info-section .info-section__social-icons a img {
@@ -935,6 +938,7 @@ p {
   gap: 0.75rem;
   margin-bottom: 1rem;
   line-height: 1.4;
+  color: #777777;
 }
 .info-section__contact-icon {
   flex-shrink: 0;
@@ -967,9 +971,6 @@ p {
 }
 @media (min-width: 1024px) {
   .info-section__title {
-    font-size: 1.2rem;
-  }
-  .info-section__column {
     font-size: 1.2rem;
   }
 }
@@ -1068,7 +1069,6 @@ p {
 body {
   font-family: Roboto, sans-serif;
   font-weight: 400;
-  background-color: #222222;
   color: #222222;
 }
 
