@@ -1,0 +1,63 @@
+[
+    {
+      "image": "https://plus.unsplash.com/premium_photo-1675676539320-2759ae7b6dae?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTI5fHxFZ2dzJTIwJTI2JTIwQmFjb258ZW58MHwwfDB8fHww",
+      "title": "Eggs & Bacon",
+      "text": "Crispy smoked bacon with free‑range scrambled eggs."
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1707588435406-74ef5f056e4d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8RnJ1aXQlMjBQYXJmYWl0fGVufDB8MHwwfHx8MA%3D%3D",
+      "title": "Fruit Parfait",
+      "text": "Layers of fresh berries, yogurt and crunchy granola."
+    },
+    {
+      "image": "https://plus.unsplash.com/premium_photo-1675715403076-30afc7c8336c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8VGVhJTIwb3IlMjBDb2ZmZWV8ZW58MHwwfDB8fHww",
+      "title": "Tea or Coffee",
+      "text": "Single‑origin coffee or a selection of fine teas."
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1610406765661-57646c40da59?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8T2F0bWVhbHxlbnwwfDB8MHx8fDA%3D",
+      "title": "Oatmeal",
+      "text": "Hearty steel‑cut oats with brown sugar and milk."
+    },
+    {
+      "image": "https://plus.unsplash.com/premium_photo-1726848160318-a83df5571b8a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fE1hcm1hbGFkZSUyMFNlbGVjdGlvbnxlbnwwfDB8MHx8fDA%3D",
+      "title": "Marmalade Selection",
+      "text": "Homemade orange and lemon marmalades."
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1625062798671-a2b45295b6e7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Q2hlZXNlJTIwUGxhdGV8ZW58MHwwfDB8fHww",
+      "title": "Cheese Plate",
+      "text": "Artisanal cheeses served with crackers and honey."
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1528207776546-365bb710ee93?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8UGFuY2FrZXN8ZW58MHwwfDB8fHww",
+      "title": "Pancakes",
+      "text": "Fluffy buttermilk pancakes with maple syrup."
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1613769049987-b31b641f25b1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8QXZvY2FkbyUyMFRvYXN0fGVufDB8MHwwfHx8MA%3D%3D",
+      "title": "Avocado Toast",
+      "text": "Smashed avocado on toasted sourdough."
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1490323948794-cc6dde6e8f5b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8U21vb3RoaWUlMjBCb3dsfGVufDB8MHwwfHx8MA%3D%3D",
+      "title": "Smoothie Bowl",
+      "text": "Tropical fruit smoothie topped with seeds."
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1526893628193-76477eb4bc8f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8R3Jhbm9sYXxlbnwwfDB8MHx8fDA%3D",
+      "title": "Granola",
+      "text": "House‑made granola with toasted nuts."
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1572137162111-fc6e04414e21?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fEJhZ2Vsc3xlbnwwfDB8MHx8fDA%3D",
+      "title": "Bagels",
+      "text": "Freshly baked bagels with cream cheese."
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1677406907092-8313789b8309?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fENyb2lzc2FudHN8ZW58MHwwfDB8fHww",
+      "title": "Croissants",
+      "text": "Buttery French croissants, baked daily."
+    }
+  ]
+  

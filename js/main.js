@@ -3,6 +3,7 @@ import initHeaderToggle from "./header.js";
 import initSwiperRooms from "./slider.js";
 import initCoreFeaturesSwiper_white from "./slider_Fea_white.js";
 import initCoreFeaturesSwiper_black from "./slider_Fea_black.js";
+import initFoodHome from './food_home.js';
 
 document.addEventListener("DOMContentLoaded", () => {
   const currentPath = window.location.pathname;
@@ -10,6 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     initCoreFeaturesSwiper_white();
     hero_dates();
     initSwiperRooms();
+    initFoodHome();
   } else {
     console.log("No estamos en la página principal");
   }

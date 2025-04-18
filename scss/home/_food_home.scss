@@ -1,0 +1,120 @@
+.food_home {
+  padding: 2rem 1rem;
+  background: #fff;
+  font-family: 'Old Standard TT', serif;
+  color: #111;
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
+  &__text {
+    order: 1;
+  }
+
+  &__icon {
+    order: 3;
+    width: 50px;
+    height: 50px;
+    margin-left: auto;
+
+    @media (max-width: 767px) {
+      order: 2;
+      margin-left: 0;
+      align-self: flex-end;
+    }
+  }
+
+  &__controls {
+    order: 2;
+    display: flex;
+    gap: 0.5rem;
+    width: 100%;
+    justify-content: center;
+
+    @media (min-width: 768px) {
+      order: 3;
+      width: auto;
+      margin-left: auto;
+      justify-content: flex-end;
+    }
+  }
+
+  &__control {
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+
+    &--prev {
+      background: #f0f0f0;
+      color: #111;
+    }
+    &--next {
+      background: #c8a96a;
+      color: #fff;
+    }
+  }
+
+  /* Swiper */
+  &__swiper {
+    margin-top: 2rem;
+    overflow: hidden; // recorta clones
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__card {
+    display: flex;
+    gap: 1rem;
+    background: #fafafa;
+    padding: 1rem;
+    align-items: flex-start;
+
+    &-image {
+      flex-shrink: 0;
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+    &-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    &-title {
+      font-size: 1rem;
+      font-weight: bold;
+      margin: 0 0 0.25rem;
+    }
+    &-text {
+      font-size: 0.85rem;
+      color: #555;
+      margin: 0;
+    }
+  }
+
+  /* Pagination bullets */
+  .swiper-pagination-bullet {
+    background: #aaa;
+    opacity: 1;
+    &:hover { background: #555; }
+  }
+}

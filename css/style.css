@@ -800,6 +800,122 @@ p {
   }
 }
 
+.food_home {
+  padding: 2rem 1rem;
+  background: #fff;
+  font-family: "Old Standard TT", serif;
+  color: #111;
+  /* Swiper */
+  /* Pagination bullets */
+}
+.food_home__header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+@media (min-width: 768px) {
+  .food_home__header {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+.food_home__text {
+  order: 1;
+}
+.food_home__icon {
+  order: 3;
+  width: 50px;
+  height: 50px;
+  margin-left: auto;
+}
+@media (max-width: 767px) {
+  .food_home__icon {
+    order: 2;
+    margin-left: 0;
+    align-self: flex-end;
+  }
+}
+.food_home__controls {
+  order: 2;
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .food_home__controls {
+    order: 3;
+    width: auto;
+    margin-left: auto;
+    justify-content: flex-end;
+  }
+}
+.food_home__control {
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.food_home__control--prev {
+  background: #f0f0f0;
+  color: #111;
+}
+.food_home__control--next {
+  background: #c8a96a;
+  color: #fff;
+}
+.food_home__swiper {
+  margin-top: 2rem;
+  overflow: hidden;
+}
+.food_home__cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+@media (min-width: 768px) {
+  .food_home__cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.food_home__card {
+  display: flex;
+  gap: 1rem;
+  background: #fafafa;
+  padding: 1rem;
+  align-items: flex-start;
+}
+.food_home__card-image {
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+.food_home__card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.food_home__card-title {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0 0 0.25rem;
+}
+.food_home__card-text {
+  font-size: 0.85rem;
+  color: #555;
+  margin: 0;
+}
+.food_home .swiper-pagination-bullet {
+  background: #aaa;
+  opacity: 1;
+}
+.food_home .swiper-pagination-bullet:hover {
+  background: #555;
+}
+
 /* Footer General */
 .footer {
   font-size: 0.8rem;
