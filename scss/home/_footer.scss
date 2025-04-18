@@ -1,6 +1,6 @@
 /* Footer General */
 .footer {
-  width: 100%;
+
   font-size: 0.8rem;
   font-weight: 700;
   background-image: url("../assets/Footer_Trama.svg");
@@ -14,8 +14,8 @@
 
 /* Footer Bottom: contendrá el copy y los links */
 .footer__bottom {
-  border-top: 1px solid #ccc;
-  padding-top: 1rem;
+   border-top: 1px solid #ccc;
+   padding: 1rem 1rem 1rem 1rem;
   margin-top: 2rem;
   display: flex;
   justify-content: space-between;
@@ -62,10 +62,12 @@
 .info-section {
   padding-left: 1rem;
 
+
   &__container {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    
   }
 
   &__column {

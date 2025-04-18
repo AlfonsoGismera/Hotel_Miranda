@@ -754,6 +754,7 @@ p {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  padding: 2rem;
 }
 .projects_black__card {
   width: 100%;
@@ -801,7 +802,6 @@ p {
 
 /* Footer General */
 .footer {
-  width: 100%;
   font-size: 0.8rem;
   font-weight: 700;
   background-image: url("../assets/Footer_Trama.svg");
@@ -816,7 +816,7 @@ p {
 /* Footer Bottom: contendrá el copy y los links */
 .footer__bottom {
   border-top: 1px solid #ccc;
-  padding-top: 1rem;
+  padding: 1rem 1rem 1rem 1rem;
   margin-top: 2rem;
   display: flex;
   justify-content: space-between;
