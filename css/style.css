@@ -867,32 +867,25 @@ p {
 }
 .food_home__swiper {
   margin-top: 2rem;
+  overflow: hidden;
 }
 .food_home__cards {
-  display: grid;
-  grid-template-columns: 1fr;
   gap: 1rem;
-}
-@media (min-width: 768px) {
-  .food_home__cards {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 .food_home__card {
   display: flex;
   gap: 1rem;
   background: #fafafa;
-  padding: 1rem;
+  margin-top: 0px !important;
   align-items: flex-start;
 }
 .food_home__card-image {
   flex-shrink: 0;
-  width: 80px;
-  height: 80px;
-  object-fit: cover;
-  border-radius: 4px;
+  width: 120px;
+  height: 120px;
 }
 .food_home__card-content {
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
