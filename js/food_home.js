@@ -46,7 +46,7 @@ export default async function initFoodHome() {
       new Swiper('.food_home__swiper', {
         slidesPerView: 1,  
             grid: {
-            rows: 2,      // Crear 2 filas
+            rows: 3,   // Número de filas (te crea 4 al principio)
             fill: 'row'   // Llenar las filas horizontalmente
           },
         spaceBetween: 20,
@@ -60,8 +60,8 @@ export default async function initFoodHome() {
           clickable: true
         },
         breakpoints: {
-          768: { slidesPerView: 2 },
-          1024: { slidesPerView: 2 }
+          768: { slidesPerView: 2 }, 
+          1024: { slidesPerView: 2}
         }
       });
     }
