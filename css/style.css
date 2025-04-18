@@ -867,7 +867,6 @@ p {
 }
 .food_home__swiper {
   margin-top: 2rem;
-  overflow: hidden;
 }
 .food_home__cards {
   display: grid;

@@ -4,20 +4,24 @@ export default async function initFoodHome() {
       if (!res.ok) throw new Error(`JSON no encontrado (${res.status})`);
       const foodData = await res.json();
   
-      const wrapper = document.querySelector('.food_home__cards');
-      wrapper.innerHTML = foodData.map(item => `
-        <div class="swiper-slide food_home__card">
-          <img
-            src="${item.image}"
-            alt="${item.title}"
-            class="food_home__card-image"
-          />
-          <div class="food_home__card-content">
-            <h3 class="food_home__card-title">${item.title}</h3>
-            <p class="food_home__card-text">${item.text}</p>
-          </div>
+      const wrapper = document.querySelector('.food_home__swiper'); 
+      wrapper.innerHTML = `
+        <div class="swiper-wrapper food_home__cards">
+          ${foodData.map(item => `
+            <div class="swiper-slide food_home__card">
+              <img
+                src="${item.image}"
+                alt="${item.title}"
+                class="food_home__card-image"
+              />
+              <div class="food_home__card-content">
+                <h3 class="food_home__card-title">${item.title}</h3>
+                <p class="food_home__card-text">${item.text}</p>
+              </div>
+            </div>
+          `).join('')}
         </div>
-      `).join('');
+      `;
   
       new Swiper('.food_home__swiper', {
         slidesPerView: 1,
@@ -41,4 +45,3 @@ export default async function initFoodHome() {
       console.error(' initFoodHome error:', err);
     }
   }
-  
