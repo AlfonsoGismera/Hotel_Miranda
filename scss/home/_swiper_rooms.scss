@@ -4,6 +4,7 @@
     margin-bottom: 4rem;
     padding: 8rem 0rem 9rem 0rem;
     font-family: Old Standard TT, serif;
+    overflow-x: hidden;
   
     &__subtitle {
       font-size: 0.9rem;
@@ -22,6 +23,7 @@
       max-width: 1200px;
       margin: 0 auto;
       position: relative; 
+      
       
     }
     
@@ -105,7 +107,7 @@
     /* Controles de navegación  */
     .swiper-button-prev,
     .swiper-button-next {
-    --swiper-navigation-size: 20px;
+    --swiper-navigation-size: 14px;
       width: 45px; 
       height: 45px; 
 
@@ -130,7 +132,9 @@
     //   }
     // }
   }
-  
+  .swiper-wrapper {
+    flex-wrap: nowrap;
+  }
   /* Responsivo */
   @media (min-width: 768px) {
     .swiper_rooms {

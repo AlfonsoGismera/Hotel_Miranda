@@ -1,6 +1,5 @@
-// slider.js
 
-// Array de datos de las diapositivas con imágenes de Unsplash y parámetros (ya actualizadas)
+// Array de datos de las diapositivas con imágenes de Unsplash y parámetros
 const slidesData = [
     {
       image: 'https://plus.unsplash.com/premium_photo-1687960116497-0dc41e1808a2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3',
@@ -40,7 +39,7 @@ const slidesData = [
     },
   ];
   
-  // Función para generar el HTML de las diapositivas
+  // Función para generar el HTML de las Cards
   function generateSlidesHTML(data) {
     return data
       .map(item => {
@@ -87,6 +86,7 @@ const slidesData = [
       slidesPerView: 1,
       spaceBetween: 30,
       loop: true,
+      loopedSlides: slidesData.length,
       pagination: {
 
         clickable: true,
