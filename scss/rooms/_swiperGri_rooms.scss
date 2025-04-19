@@ -1,21 +1,25 @@
-.swiper_rooms {
-  text-align: center;
-  background-color: #ffffff;
-  margin-bottom: 4rem;
-  padding: 8rem 0rem 9rem 0rem;
-  font-family: Old Standard TT, serif;
-  overflow-x: hidden;
+.grid_rooms {
+  /* Estilos generales para el contenedor padre si los necesitas */
 
-  &__subtitle {
-    font-size: 0.9rem;
-    letter-spacing: 0.1rem;
+  .swiperGri_rooms {
+    text-align: center;
+    background-color: #ffffff;
     margin-bottom: 4rem;
-    font-weight: 700;
-    color: #777777;
-  }
+    padding: 8rem 0rem 9rem 0rem;
+    font-family: Old Standard TT, serif;
+    overflow-x: hidden;
 
-  &__title {
-    margin-bottom: 4rem;
+    &__subtitle {
+      font-size: 0.9rem;
+      letter-spacing: 0.1rem;
+      margin-bottom: 4rem;
+      font-weight: 700;
+      color: #777777;
+    }
+
+    &__title {
+      margin-bottom: 4rem;
+    }
   }
 
   &__container {
@@ -25,13 +29,42 @@
     position: relative;
   }
 
-  /* Cada slide se centra horizontalmente y permite overflow visible */
+  &__wrapper {
+    flex-wrap: nowrap; /* Asegura que los items no se envuelvan por defecto */
+  }
+
   &__slide {
     display: flex;
     justify-content: center;
     overflow: visible;
   }
 
+  &__pagination {
+    position: absolute;
+    bottom: 0; /* Ajusta la posición según necesites */
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  &__button-prev,
+  &__button-next {
+    --swiper-navigation-size: 14px;
+    width: 45px;
+    height: 45px;
+  }
+
+  &__button-prev {
+    background-color: #bdb8b8;
+    color: #111111;
+  }
+
+  &__button-next {
+    background-color: $primary-gold;
+    color: #ffffff;
+  }
+
+  /* Estilos específicos de los elementos dentro de cada slide */
   &__image-container {
     width: 100%;
     max-width: 350px;
@@ -46,7 +79,6 @@
     object-fit: cover;
   }
 
-  /* Contenedor de los emoticonos, en la parte superior central */
   &__icons {
     position: absolute;
     top: 0;
@@ -65,7 +97,6 @@
     height: 1.3rem;
   }
 
-  /* Bloque inferior de información de la habitación */
   &__info-box {
     position: absolute;
     bottom: -4rem;
@@ -98,39 +129,11 @@
     color: $primary-gold;
     font-weight: 700;
   }
-
-  /* Controles de navegación  */
-  .swiper-button-prev,
-  .swiper-button-next {
-    --swiper-navigation-size: 14px;
-    width: 45px;
-    height: 45px;
-  }
-
-  .swiper-button-prev {
-    background-color: #bdb8b8;
-    color: #111111;
-  }
-
-  .swiper-button-next {
-    background-color: $primary-gold;
-    color: #ffffff;
-  }
-
-  // .swiper-pagination-bullet {
-  //   background: #aaa;
-  //   opacity: 1;
-  //   &:hover {
-  //     background: #555;
-  //   }
-  // }
 }
-.swiper-wrapper {
-  flex-wrap: nowrap;
-}
-/* Responsivo */
+
+/* Responsivo (ajusta el ámbito según necesites) */
 @media (min-width: 768px) {
-  .swiper_rooms {
+  .grid_rooms  {
     padding: 6rem 0rem 9rem 0rem;
     &__title {
       font-size: 2.5rem;
@@ -139,7 +142,7 @@
 }
 
 @media (min-width: 1024px) {
-  .swiper_rooms {
+  .grid_rooms {
     &__title {
       font-size: 3rem;
     }

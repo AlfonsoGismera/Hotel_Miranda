@@ -1189,52 +1189,75 @@ p {
   }
 }
 
-.swiper_rooms {
+.grid_rooms {
+  /* Estilos generales para el contenedor padre si los necesitas */
+  /* Estilos específicos de los elementos dentro de cada slide */
+}
+.grid_rooms .swiperGri_rooms {
   text-align: center;
   background-color: #ffffff;
   margin-bottom: 4rem;
   padding: 8rem 0rem 9rem 0rem;
   font-family: Old Standard TT, serif;
   overflow-x: hidden;
-  /* Cada slide se centra horizontalmente y permite overflow visible */
-  /* Contenedor de los emoticonos, en la parte superior central */
-  /* Bloque inferior de información de la habitación */
-  /* Controles de navegación  */
 }
-.swiper_rooms__subtitle {
+.grid_rooms .swiperGri_rooms__subtitle {
   font-size: 0.9rem;
   letter-spacing: 0.1rem;
   margin-bottom: 4rem;
   font-weight: 700;
   color: #777777;
 }
-.swiper_rooms__title {
+.grid_rooms .swiperGri_rooms__title {
   margin-bottom: 4rem;
 }
-.swiper_rooms__container {
+.grid_rooms__container {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
 }
-.swiper_rooms__slide {
+.grid_rooms__wrapper {
+  flex-wrap: nowrap; /* Asegura que los items no se envuelvan por defecto */
+}
+.grid_rooms__slide {
   display: flex;
   justify-content: center;
   overflow: visible;
 }
-.swiper_rooms__image-container {
+.grid_rooms__pagination {
+  position: absolute;
+  bottom: 0; /* Ajusta la posición según necesites */
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.grid_rooms__button-prev, .grid_rooms__button-next {
+  --swiper-navigation-size: 14px;
+  width: 45px;
+  height: 45px;
+}
+.grid_rooms__button-prev {
+  background-color: #bdb8b8;
+  color: #111111;
+}
+.grid_rooms__button-next {
+  background-color: #BEAD8E;
+  color: #ffffff;
+}
+.grid_rooms__image-container {
   width: 100%;
   max-width: 350px;
   position: relative;
   overflow: visible;
   height: 250px;
 }
-.swiper_rooms__image {
+.grid_rooms__image {
   display: block;
   width: 100%;
   object-fit: cover;
 }
-.swiper_rooms__icons {
+.grid_rooms__icons {
   position: absolute;
   top: 0;
   left: 50%;
@@ -1247,11 +1270,11 @@ p {
   z-index: 10;
   border: #000 solid 1px;
 }
-.swiper_rooms__icons img {
+.grid_rooms__icons img {
   width: 1.3rem;
   height: 1.3rem;
 }
-.swiper_rooms__info-box {
+.grid_rooms__info-box {
   position: absolute;
   bottom: -4rem;
   left: 50%;
@@ -1265,51 +1288,33 @@ p {
   align-items: center;
   z-index: 10;
 }
-.swiper_rooms__room-title {
+.grid_rooms__room-title {
   font-size: 1.5rem;
 }
-.swiper_rooms__room-description {
+.grid_rooms__room-description {
   font-size: 0.85rem;
   color: #777777;
   font-family: Roboto, serif;
   margin: 0.25rem 0 0 0;
 }
-.swiper_rooms__room-price {
+.grid_rooms__room-price {
   font-size: 1rem;
   font-family: Archivo, serif;
   color: #BEAD8E;
   font-weight: 700;
 }
-.swiper_rooms .swiper-button-prev,
-.swiper_rooms .swiper-button-next {
-  --swiper-navigation-size: 14px;
-  width: 45px;
-  height: 45px;
-}
-.swiper_rooms .swiper-button-prev {
-  background-color: #bdb8b8;
-  color: #111111;
-}
-.swiper_rooms .swiper-button-next {
-  background-color: #BEAD8E;
-  color: #ffffff;
-}
 
-.swiper-wrapper {
-  flex-wrap: nowrap;
-}
-
-/* Responsivo */
+/* Responsivo (ajusta el ámbito según necesites) */
 @media (min-width: 768px) {
-  .swiper_rooms {
+  .grid_rooms {
     padding: 6rem 0rem 9rem 0rem;
   }
-  .swiper_rooms__title {
+  .grid_rooms__title {
     font-size: 2.5rem;
   }
 }
 @media (min-width: 1024px) {
-  .swiper_rooms__title {
+  .grid_rooms__title {
     font-size: 3rem;
   }
 }
