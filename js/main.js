@@ -12,15 +12,15 @@ document.addEventListener("DOMContentLoaded", () => {
     hero_dates();
     initSwiperRooms();
     initFoodHome();
-  } else {
-    console.log("No estamos en la página principal");
   }
   if (currentPath === "/html/about_us.html" || currentPath.includes("about_us.html")) {
-    console.log("¡Estamos en about_us.html! Intentando inicializar el slider negro.");
+    console.log("¡Estamos en about_us.html!");
     initCoreFeaturesSwiper_black();
-  } else {
-    console.log("No estamos en about_us.html");
   }
+  if (currentPath === "/html/rooms.html" || currentPath.includes("rooms.html")) {
+    console.log("¡Estamos en rooms.html!");
+    initSwiperRooms();
+  } 
   initHeaderToggle();
  
 });
