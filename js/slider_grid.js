@@ -48,11 +48,15 @@ export default async function initSwiperRooms_Grid() {
         fill: 'row'
       },
       spaceBetween: 30,
-      loop: false, // importante: no duplicar slides
+      loop: false, 
       pagination: {
-        el: ".grid_rooms__pagination",
-        type: "fraction", // muestra "1 / X"
-        clickable: true
+        el: '.grid_rooms__pagination',
+        clickable: true,
+        // Renderiza bullets como números y aplica tu clase activa
+        renderBullet: (index, className) => {
+          // index empieza en 0, por eso +1
+          return `<span class="${className}">${index + 1}</span>`;
+        }
       },
       navigation: {
         nextEl: ".grid_rooms__button-next",

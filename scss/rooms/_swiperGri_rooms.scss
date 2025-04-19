@@ -1,6 +1,7 @@
 .grid_rooms {
   width: 100%;
-  padding: 1rem 3rem 1rem;
+  padding: 1rem 1rem 1rem;
+  
   box-sizing: border-box;
   background: #fff;
 
@@ -58,6 +59,7 @@
     padding: 1rem 0;
     text-align: center;
     margin-top: 3rem;
+    margin-bottom: 3rem;
   }
 
   &__room-title {
@@ -97,50 +99,95 @@
 
   /* flechas en la base */
   .swiper-button-prev,
-  .swiper-button-next {
-    width: 2rem;
-    height: 2rem;
-    border-radius: 4px;
-    top: auto;
-    bottom: 1rem;
-    background: #eee;
-    color: #111;
-  }
-  .swiper-button-next {
-    background: $primary-gold;
-    color: #fff;
-  }
+.swiper-button-next {
+  position: absolute;
+  bottom: 0;
+  top: auto;
+  width: 2rem;
+  height: 2rem;
+  color: #111;
+  --swiper-navigation-size: 14px;
+}
+.swiper-button-prev {
+  background: #222222;
+  left: 1rem;
+  color: #fff;
+}
+.swiper-button-next {
+  right: 1rem;
+  background: $primary-gold;
+  color: #fff;
+}
 
-  /* paginación numerada */
-  &__pagination {
-    display: flex;
-    justify-content: center;
-    gap: 0.5rem;
-    margin-top: 1rem;
+/* Paginación numérica centrada en un recuadro dorado con el número perfectamente centrado */
+.grid_rooms__pagination {
+  position: absolute;
+  bottom: 0;
+  left: 17%;
+  display: flex;
 
-    .swiper-pagination-bullet {
-      padding: 0.25rem 0.5rem;
-      background: transparent;
-      color: #777;
-      opacity: 1;
-      border: 1px solid transparent;
-      border-radius: 4px;
-      cursor: pointer;
-      transition: background 0.3s, color 0.3s;
-    }
-    .swiper-pagination-bullet-active {
-      background: $primary-gold;
-      color: #fff;
-      border-color: $primary-gold;
-    }
-  }
+  gap: 0.5rem;
+}
+
+.grid_rooms__pagination .swiper-pagination-bullet {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  background: transparent;
+  color: #777;
+  font-size: 0.9rem;
+  font-weight: 700;
+  opacity: 1;
+  cursor: pointer;
+  border-radius: 0;
+  transition: background 0.3s, color 0.3s;
+}
+
+.grid_rooms__pagination .swiper-pagination-bullet-active {
+  background: $primary-gold;
+  color: #fff;
+  border-color: $primary-gold;
+}
+
+
 }
 
 /* Media queries */
 @media (min-width: 768px) {
   .grid_rooms {
+    &__info-box {
+      margin-bottom: 0rem;
+    }
     &__container {
-      padding-bottom: 3rem; /* espacio para flechas/paginación */
+      padding-bottom: 3rem; 
+    }
+    .grid_rooms__pagination {
+      position: absolute;
+      bottom: 0;
+      left: 30%;
+      display: flex;
+    
+      gap: 0.5rem;
     }
   }
+ 
+}
+@media (min-width: 1024px) {
+  .grid_rooms {
+    padding: 1rem 3rem 1rem;
+    &__container {
+      padding-bottom: 3rem; 
+    }
+    .grid_rooms__pagination {
+      position: absolute;
+      bottom: 0;
+      left: 42%;
+      display: flex;
+    
+      gap: 0.5rem;
+    }
+  }
+ 
 }
