@@ -336,7 +336,6 @@
 }
 /* Hero Section */
 .hero {
-  margin-top: 3rem;
   background-color: #333333;
   display: flex;
   color: #fff;
@@ -525,7 +524,7 @@
 }
 .swiper_rooms {
   text-align: center;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   margin-bottom: 4rem;
   padding: 8rem 0rem 9rem 0rem;
   font-family: Old Standard TT, serif;
@@ -561,13 +560,12 @@
   max-width: 350px;
   position: relative;
   overflow: visible;
-  background-color: #f2f2f2;
+  height: 250px;
 }
 .swiper_rooms__image {
   display: block;
   width: 100%;
   object-fit: cover;
-  max-height: 250px;
 }
 .swiper_rooms__icons {
   position: absolute;
@@ -627,7 +625,7 @@
 }
 .swiper_rooms .swiper-button-next {
   background-color: #BEAD8E;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .swiper-wrapper {

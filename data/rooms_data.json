@@ -1,0 +1,87 @@
+[
+    {
+      "image": "https://plus.unsplash.com/premium_photo-1687960116497-0dc41e1808a2?w=500&auto=format&fit=crop&q=60",
+      "roomTitle": "Duplex Room",
+      "description": "Spacious two‑level room with balcony views.",
+      "price": "$150/Night",
+      "availabilityDate": "2025-05-10"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1685592437742-3b56edb46b15?q=80&w=1470&auto=format&fit=crop",
+      "roomTitle": "Luxury Suite",
+      "description": "Elegantly furnished suite with king‑size bed.",
+      "price": "$250/Night",
+      "availabilityDate": "2025-06-20"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1594560913095-8cf34bab82ad?w=500&auto=format&fit=crop&q=60",
+      "roomTitle": "Executive Room",
+      "description": "Modern room with workspace and free Wi‑Fi.",
+      "price": "$180/Night",
+      "availabilityDate": "2025-07-07"
+    },
+    {
+      "image": "https://plus.unsplash.com/premium_photo-1670360414903-19e5832f8bc4?w=500&auto=format&fit=crop&q=60",
+      "roomTitle": "Deluxe Room",
+      "description": "Luxurious décor with city skyline views.",
+      "price": "$200/Night",
+      "availabilityDate": "2025-08-15"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1631048730670-ff5cd0d08f15?w=500&auto=format&fit=crop&q=60",
+      "roomTitle": "Family Room",
+      "description": "Two queen beds perfect for families.",
+      "price": "$220/Night",
+      "availabilityDate": "2025-09-30"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=500&auto=format&fit=crop&q=60",
+      "roomTitle": "Executive Suite",
+      "description": "Separate living area and premium amenities.",
+      "price": "$300/Night",
+      "availabilityDate": "2025-10-12"
+    },
+    {
+      "image": "https://plus.unsplash.com/premium_photo-1661962495669-d72424626bdc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8aGFiaXRhY2lvbmVzJTIwZGUlMjBob3RlbHxlbnwwfDB8MHx8fDA%3D",
+      "roomTitle": "Luxury Suite",
+      "description": "Top‑floor suite with panoramic views.",
+      "price": "$500/Night",
+      "availabilityDate": "2025-11-05"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1743410975074-4be327c0ae63?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Njd8fGhhYml0YWNpb25lcyUyMGRlJTIwaG90ZWwlMjByb21hbnRpY2F8ZW58MHwwfDB8fHww",
+      "roomTitle": "Junior Suite",
+      "description": "Cozy suite with sofa and work desk.",
+      "price": "$210/Night",
+      "availabilityDate": "2025-12-01"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1725962479542-1be0a6b0d444?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8aGFiaXRhY2lvbmVzJTIwZGUlMjBob3RlbHxlbnwwfDB8MHx8fDA%3D",
+      "roomTitle": "Standard Room",
+      "description": "Comfortable room with queen‑size bed.",
+      "price": "$120/Night",
+      "availabilityDate": "2025-05-25"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=500&auto=format&fit=crop&q=60",
+      "roomTitle": "Single Room",
+      "description": "Ideal for solo travelers, with all essentials.",
+      "price": "$100/Night",
+      "availabilityDate": "2025-07-21"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1741506131058-533fcf894483?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjR8fGhhYml0YWNpb25lcyUyMGRlJTIwaG90ZWwlMjByb21hbnRpY2F8ZW58MHwwfDB8fHww",
+      "roomTitle": "Twin Room",
+      "description": "Two separate beds with shared workspace.",
+      "price": "$140/Night",
+      "availabilityDate": "2025-09-10"
+    },
+    {
+      "image": "https://plus.unsplash.com/premium_photo-1661427610814-3de4566231ea?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjI5fHxoYWJpdGFjaW9uZXMlMjBkZSUyMGhvdGVsJTIwcm9tYW50aWNhfGVufDB8MHwwfHx8MA%3D%3D",
+      "roomTitle": "Honeymoon",
+      "description": "Romantic suite with private jacuzzi.",
+      "price": "$350/Night",
+      "availabilityDate": "2025-11-30"
+    }
+  ]
+  
