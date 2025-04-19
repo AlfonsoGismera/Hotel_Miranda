@@ -300,12 +300,11 @@
 }
 .discover_home__subtitle {
   position: absolute;
-  top: -3rem;
+  top: 0rem;
   left: 2rem;
   text-transform: uppercase;
   font-size: 0.9rem;
   color: #888;
-  background: #fff;
   padding: 0 0.5rem;
 }
 .discover_home__title-box .discover_home__main-title {
@@ -320,7 +319,8 @@
   margin-bottom: 2rem;
 }
 
-@media (min-width: 768px) { /* Tablet y dispositivos más grandes */
+@media (min-width: 768px) {
+  /* Tablet y dispositivos más grandes */
   .discover_home {
     padding: 5rem 0rem 5rem 0rem;
   }
@@ -336,12 +336,17 @@
   .discover_home .discover_home__card--dark {
     grid-area: 2/2;
   }
+  .discover_home__subtitle {
+    top: -3rem;
+  }
 }
-@media (min-width: 1024px) { /* Tablet y dispositivos más grandes */
+@media (min-width: 1024px) {
+  /* Tablet y dispositivos más grandes */
   .discover_home {
     padding: 5rem 0rem 5rem 2rem;
   }
-  .discover_home__content { /* Selector completo */
+  .discover_home__content {
+    /* Selector completo */
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
@@ -839,6 +844,9 @@ p {
   background: #fff;
   font-family: "Old Standard TT", serif;
   color: #111;
+  margin: 0 auto;
+  position: relative; /* Establece este section como el contenedor de referencia */
+  overflow: hidden;
   /* Swiper */
   /* Pagination bullets */
 }
@@ -847,27 +855,33 @@ p {
   flex-direction: column;
   align-items: flex-start;
   gap: 1rem;
+  margin-top: 15rem;
+  padding-left: 7rem;
 }
-@media (min-width: 768px) {
+@media (max-width: 767px) {
   .food_home__header {
-    flex-direction: row;
-    align-items: center;
+    padding-left: 0rem; /* Reinicia el padding en móvil */
   }
 }
-.food_home__text {
-  order: 1;
-}
 .food_home__icon {
-  order: 3;
-  width: 50px;
-  height: 50px;
-  margin-left: auto;
+  position: absolute; /* Saca el icono del flujo normal */
+  top: 0rem; /* Ajusta la posición vertical */
+  left: 2rem;
+  width: 229px;
+  height: 229px;
+  margin-bottom: 1rem;
+  background-image: url("../assets/icons/donut.svg");
+  background-size: contain; /* Ajusta el tamaño de la imagen dentro del div */
+  background-repeat: no-repeat; /* Evita la repetición de la imagen */
+  background-position: center; /* Centra la imagen dentro del div */
 }
 @media (max-width: 767px) {
   .food_home__icon {
-    order: 2;
-    margin-left: 0;
-    align-self: flex-end;
+    background-image: url("../assets/icons/donut_roto.svg");
+    width: 200px;
+    height: 200px;
+    left: auto;
+    right: -1.3rem;
   }
 }
 .food_home__controls {
@@ -900,8 +914,8 @@ p {
   color: #fff;
 }
 .food_home__swiper {
+  width: 80%;
   margin-top: 2rem;
-  overflow: hidden;
 }
 .food_home__cards {
   gap: 1rem;
