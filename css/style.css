@@ -184,7 +184,7 @@
 .discover_home__content {
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 2rem;
   order: -1;
 }
 .discover_home__cards {
@@ -192,14 +192,14 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
   flex: 1;
-  gap: 3rem;
+  gap: 2.5rem;
   padding: 0rem 3rem 0rem 3rem;
 }
 @media (max-width: 763px) {
   .discover_home__cards {
     grid-template-columns: 1fr;
     padding: 0rem 1rem 0rem 1rem;
-    gap: 4rem;
+    gap: 2.5rem;
     order: -1;
   }
 }
@@ -258,7 +258,6 @@
   background: #111;
   color: #fff;
   padding: 1.5rem;
-  transform: translateY(20%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -623,7 +622,7 @@
   height: 45px;
 }
 .swiper_rooms .swiper-button-prev {
-  background-color: #ffffff;
+  background-color: #bdb8b8;
   color: #111111;
 }
 .swiper_rooms .swiper-button-next {
