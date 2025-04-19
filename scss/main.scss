@@ -12,7 +12,9 @@
 @import './home/responsive';
 @import './home/footer'; 
 // About us
-@import './about_us/core_black'; 
+@import './about_us/core_black';
+// Rooms Grid
+@import './rooms/swiperGri_rooms';
 
 * {
   box-sizing: border-box;

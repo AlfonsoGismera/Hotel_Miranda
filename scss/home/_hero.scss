@@ -5,7 +5,7 @@
   color: #fff;
   flex-direction: column;
   align-items: center;
-  
+  position: relative;
 
   &__info {
     padding: 2rem 1rem;
@@ -35,7 +35,6 @@
     width: 100%;
     background-color: #000;
     padding: 1.5rem 1rem;
-
   }
   
   &__dates {
@@ -54,7 +53,6 @@
       font-size: 0.9rem;
       margin-bottom: 0.25rem;
     }
-    
   }
 
   &__check-btn {
@@ -62,26 +60,52 @@
     height: 100%;
     margin-top: 0;
   }
+  
   .hero__date-field input[type="date"] {
     width: 100%;
-    padding: 10px 10px 10px 35px; /* Añade padding a la izquierda para el icono */
+    padding: 10px 10px 10px 35px; /* espacio para el icono */
     border: none;
     border-bottom: 1px solid $primary-gold; 
     background-color: transparent; 
     color: #686868; 
     font-size: 1rem;
-    appearance: none; /* Oculta los iconos nativos */
-    -webkit-appearance: none;
-    -moz-appearance: none;
+    appearance: none;
     background-image: url('../assets/icons/icono_date.svg'); 
     background-repeat: no-repeat;
-    background-position: left  center; 
+    background-position: left center; 
     background-size: 1.2rem; 
-
   }
-  
 
-}
+  /* ————————
+     BREADCRUMB
+  ———————— */
+  &__breadcrumb {
+    position: absolute;
+    bottom: 1rem;
+    bottom: 0;
+    left: 75%;
+    transform: translateX(-75%);
+    background: #fff;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    white-space: nowrap;
+
+    a {
+      text-decoration: none;
+      font-weight: 700;
+    }
+    span {
+      color: $primary-gold; /* ruta actual en dorado */
+      font-weight: 700;
+    }
+
+    @media (max-width: 767px) {
+      transform: translateX(-50%);
+
+    }
+  }
+
+} /* fin .hero */
 
 /* -------------------------
    Media Queries para tablet y desktop
@@ -113,20 +137,12 @@
     
     .hero__date-field {
       flex: 1;
-      
     }
     
-    /* Aseguramos que el botón tenga la misma altura */
     .hero__check-btn {
       margin-top: 1.2rem;
       height: 3rem;
       white-space: nowrap;
     }
-    
-
   }
-}
-
-@media (min-width: 1024px) {
-
 }

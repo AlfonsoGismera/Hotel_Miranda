@@ -341,6 +341,10 @@
   color: #fff;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  /* ————————
+     BREADCRUMB
+  ———————— */
 }
 .hero__info {
   padding: 2rem 1rem;
@@ -389,28 +393,48 @@
 }
 .hero .hero__date-field input[type=date] {
   width: 100%;
-  padding: 10px 10px 10px 35px; /* Añade padding a la izquierda para el icono */
+  padding: 10px 10px 10px 35px; /* espacio para el icono */
   border: none;
   border-bottom: 1px solid #BEAD8E;
   background-color: transparent;
   color: #686868;
   font-size: 1rem;
-  appearance: none; /* Oculta los iconos nativos */
-  -webkit-appearance: none;
-  -moz-appearance: none;
+  appearance: none;
   background-image: url("../assets/icons/icono_date.svg");
   background-repeat: no-repeat;
   background-position: left center;
   background-size: 1.2rem;
 }
+.hero__breadcrumb {
+  position: absolute;
+  bottom: 1rem;
+  bottom: 0;
+  left: 75%;
+  transform: translateX(-75%);
+  background: #fff;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+.hero__breadcrumb a {
+  text-decoration: none;
+  font-weight: 700;
+}
+.hero__breadcrumb span {
+  color: #BEAD8E; /* ruta actual en dorado */
+  font-weight: 700;
+}
+@media (max-width: 767px) {
+  .hero__breadcrumb {
+    transform: translateX(-50%);
+  }
+}
 
+/* fin .hero */
 /* -------------------------
    Media Queries para tablet y desktop
 ------------------------- */
 @media (min-width: 768px) {
-  .hero {
-    /* Aseguramos que el botón tenga la misma altura */
-  }
   .hero__title {
     font-size: 5rem;
   }
@@ -1165,6 +1189,130 @@ p {
   }
 }
 
+.swiper_rooms {
+  text-align: center;
+  background-color: #ffffff;
+  margin-bottom: 4rem;
+  padding: 8rem 0rem 9rem 0rem;
+  font-family: Old Standard TT, serif;
+  overflow-x: hidden;
+  /* Cada slide se centra horizontalmente y permite overflow visible */
+  /* Contenedor de los emoticonos, en la parte superior central */
+  /* Bloque inferior de información de la habitación */
+  /* Controles de navegación  */
+}
+.swiper_rooms__subtitle {
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 4rem;
+  font-weight: 700;
+  color: #777777;
+}
+.swiper_rooms__title {
+  margin-bottom: 4rem;
+}
+.swiper_rooms__container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+.swiper_rooms__slide {
+  display: flex;
+  justify-content: center;
+  overflow: visible;
+}
+.swiper_rooms__image-container {
+  width: 100%;
+  max-width: 350px;
+  position: relative;
+  overflow: visible;
+  height: 250px;
+}
+.swiper_rooms__image {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+.swiper_rooms__icons {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ffffff;
+  padding: 0.3rem 0.5rem;
+  display: flex;
+  gap: 0.3rem;
+  font-size: 0.9rem;
+  z-index: 10;
+  border: #000 solid 1px;
+}
+.swiper_rooms__icons img {
+  width: 1.3rem;
+  height: 1.3rem;
+}
+.swiper_rooms__info-box {
+  position: absolute;
+  bottom: -4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  background-color: #ffffff;
+  border: #000 solid 1px;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+.swiper_rooms__room-title {
+  font-size: 1.5rem;
+}
+.swiper_rooms__room-description {
+  font-size: 0.85rem;
+  color: #777777;
+  font-family: Roboto, serif;
+  margin: 0.25rem 0 0 0;
+}
+.swiper_rooms__room-price {
+  font-size: 1rem;
+  font-family: Archivo, serif;
+  color: #BEAD8E;
+  font-weight: 700;
+}
+.swiper_rooms .swiper-button-prev,
+.swiper_rooms .swiper-button-next {
+  --swiper-navigation-size: 14px;
+  width: 45px;
+  height: 45px;
+}
+.swiper_rooms .swiper-button-prev {
+  background-color: #bdb8b8;
+  color: #111111;
+}
+.swiper_rooms .swiper-button-next {
+  background-color: #BEAD8E;
+  color: #ffffff;
+}
+
+.swiper-wrapper {
+  flex-wrap: nowrap;
+}
+
+/* Responsivo */
+@media (min-width: 768px) {
+  .swiper_rooms {
+    padding: 6rem 0rem 9rem 0rem;
+  }
+  .swiper_rooms__title {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .swiper_rooms__title {
+    font-size: 3rem;
+  }
+}
 * {
   box-sizing: border-box;
   margin: 0;

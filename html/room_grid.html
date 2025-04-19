@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hotel Miranda - About Us</title>
-  <link rel="icon" type="image/png" href="../assets/logos/LogoM1.svg" />
+  <title>Hotel Miranda - Rooms Grid</title>
+  <link rel="icon" type="image/png" href="../assets/logos/LogoM2.svg" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
@@ -33,8 +33,8 @@
 
       <nav class="header__nav">
         <ul class="header__menu">
-          <li class="header__menu-item"><a class="header__menu-link" href="about_us.html">About Us</a></li>
-          <li class="header__menu-item"><a class="header__menu-link" href="#">Rooms</a></li>
+          <li class="header__menu-item"><a class="header__menu-link" href="./about_us.html">About Us</a></li>
+          <li class="header__menu-item"><a class="header__menu-link" href="room_grid.html">Rooms</a></li>
           <li class="header__menu-item"><a class="header__menu-link" href="#">Offers</a></li>
           <li class="header__menu-item"><a class="header__menu-link" href="#">Contact</a></li>
         </ul>
@@ -57,84 +57,31 @@
     <section class="hero">
       <!-- Bloque superior: información, título y botones -->
       <div class="hero__info">
-        <p class="hero__subtext">The Ultimate Luxury</p>
-        <h1 class="hero__title">About Us</h1>
+        <p class="hero__subtext">The Ultimate Rooms</p>
+        <h1 class="hero__title">Rooms Grid</h1>
+        <div class="hero__breadcrumb"></div>
       </div>
-
-
     </section>
 
-    <!-- Sección de Vídeo -->
 
-    <!-- Core swiper -->
-    <section class="core_black">
-      <div class="core_black__container">
-        <p class="core_black__subtitle">FACILITIES</p>
-        <h2 class="core_black__title">Core Features</h2>
 
-        <!-- Swiper wrapper (en móvil será slider; en desktop se verá como grid) -->
-        <div class="swiper-container core_black__swiper">
-          <div class="swiper-wrapper core_black__features">
-            <!-- Card 01 -->
-            <div class="swiper-slide core_black__feature-card">
-              <span class="core_black__number">01</span>
-              <img src="../assets/core/rating.svg" alt="" class="core_black__icon" />
-              <h3 class="core_black__card-title">Have High Rating</h3>
-              <p class="core_black__card-text">
-                We have a high score given by our customers
-              </p>
-            </div>
-            <!-- Card 02 -->
-            <div class="swiper-slide core_black__feature-card">
-              <span class="core_black__number">02</span>
-              <img src="../assets/core/hours.svg" alt="" class="core_black__icon" />
-              <h3 class="core_black__card-title">Quiet Hours</h3>
-              <p class="core_black__card-text">
-                The hours of silence are hours designed for maximum relaxation.
-              </p>
-            </div>
-            <!-- Card 03 -->
-            <div class="swiper-slide core_black__feature-card">
-              <span class="core_black__number">03</span>
-              <img src="../assets/core/locations.svg" alt="" class="core_black__icon" />
-              <h3 class="core_black__card-title">Best Locations</h3>
-              <p class="core_black__card-text">
-                We have the best locations less than 10 minutes from a luxury beach
-              </p>
-            </div>
-            <!-- Card 04 -->
-            <div class="swiper-slide core_black__feature-card">
-              <span class="core_black__number">04</span>
-              <img src="../assets/core/cancellation.svg" alt="" class="core_black__icon" />
-              <h3 class="core_black__card-title">Free Cancellation</h3>
-              <p class="core_black__card-text">
-                Free cancellation at any time
-              </p>
-            </div>
-            <!-- Card 05 -->
-            <div class="swiper-slide core_black__feature-card">
-              <span class="core_black__number">05</span>
-              <img src="../assets/core/payment.svg" alt="" class="core_black__icon" />
-              <h3 class="core_black__card-title">Payment Options</h3>
-              <p class="core_black__card-text">
-                We have multiple payment methods, use the one you like the most.
-              </p>
-            </div>
-            <!-- Card 06 -->
-            <div class="swiper-slide core_black__feature-card">
-              <span class="core_black__number">06</span>
-              <img src="../assets/core/offers.svg" alt="" class="core_black__icon" />
-              <h3 class="core_black__card-title">Special Offers</h3>
-              <p class="core_black__card-text">
-                We have special offers for couples, families and group vacations.
-              </p>
-            </div>
-          </div>
-          <div class="swiper-pagination core_black__pagination"></div>
+
+     <!-- Sección de Servicios Roooms Grid -->
+     <section class="swiper_rooms">
+      <p class="swiper_rooms__subtitle">ROOMS</p>
+      <h1 class="swiper_rooms__title">Hand Picked Rooms</h1>
+      <div class="swiper-container swiper_rooms__container">
+        <div class="swiper-wrapper">
+          <!-- Aquí se inyectarán dinámicamente las slides -->
         </div>
+
+        <!-- Controles de Swiper -->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
     </section>
-    <!-- Some Fun Facts -->
+
 
 
 
@@ -152,7 +99,7 @@
         <div class="info-section__column">
           <div class="info-section__logo-and-text">
             <div class="info-section__logo">
-              <img src="./assets/logos/LogoM2_invertido.svg" alt="Hotel Miranda Logo" class="info-section__logo" />
+              <img src="../assets/logos/LogoM2_invertido.svg" alt="Hotel Miranda Logo" class="info-section__logo" />
               <span class="info-section__logo-text">
                 <span class="info-section__logo-first-word">HOTEL</span><br>MIRANDA
               </span>

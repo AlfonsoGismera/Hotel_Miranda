@@ -1,6 +1,8 @@
 import hero_dates from "./hero.js";
-import initHeaderToggle from "./header.js";
+import { initHeaderToggle } from "./header.js";
+import { initHeroBreadcrumb } from "./header.js";
 import initSwiperRooms from "./slider.js";
+import initSwiperRooms_Grid from "./slider_grid.js";
 import initCoreFeaturesSwiper_white from "./slider_Fea_white.js";
 import initCoreFeaturesSwiper_black from "./slider_Fea_black.js";
 import initFoodHome from './food_home.js';
@@ -17,10 +19,10 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log("¡Estamos en about_us.html!");
     initCoreFeaturesSwiper_black();
   }
-  if (currentPath === "/html/rooms.html" || currentPath.includes("rooms.html")) {
-    console.log("¡Estamos en rooms.html!");
-    initSwiperRooms();
+  if (currentPath === "/html/room_grid.html" || currentPath.includes("room_grid.html")) {
+    console.log("¡Estamos en room_grid.html!");
+    initSwiperRooms_Grid();
   } 
   initHeaderToggle();
- 
+  initHeroBreadcrumb();
 });
