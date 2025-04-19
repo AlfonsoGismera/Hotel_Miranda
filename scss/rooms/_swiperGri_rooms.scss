@@ -1,150 +1,146 @@
 .grid_rooms {
-  /* Estilos generales para el contenedor padre si los necesitas */
+  width: 100%;
+  padding: 1rem 3rem 1rem;
+  box-sizing: border-box;
+  background: #fff;
 
-  .swiperGri_rooms {
+  &__inner {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-size: 2rem;
+    font-weight: 700;
     text-align: center;
-    background-color: #ffffff;
-    margin-bottom: 4rem;
-    padding: 8rem 0rem 9rem 0rem;
-    font-family: Old Standard TT, serif;
-    overflow-x: hidden;
+    margin-bottom: 0.5rem;
+  }
 
-    &__subtitle {
-      font-size: 0.9rem;
-      letter-spacing: 0.1rem;
-      margin-bottom: 4rem;
-      font-weight: 700;
-      color: #777777;
-    }
-
-    &__title {
-      margin-bottom: 4rem;
-    }
+  &__subtitle {
+    font-size: 1rem;
+    color: #777;
+    text-align: center;
+    margin-bottom: 2rem;
   }
 
   &__container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    position: relative;
-  }
-
-  &__wrapper {
-    flex-wrap: nowrap; /* Asegura que los items no se envuelvan por defecto */
-  }
-
-  &__slide {
-    display: flex;
-    justify-content: center;
-    overflow: visible;
-  }
-
-  &__pagination {
-    position: absolute;
-    bottom: 0; /* Ajusta la posición según necesites */
-    left: 0;
-    width: 100%;
-    text-align: center;
-  }
-
-  &__button-prev,
-  &__button-next {
-    --swiper-navigation-size: 14px;
-    width: 45px;
-    height: 45px;
-  }
-
-  &__button-prev {
-    background-color: #bdb8b8;
-    color: #111111;
-  }
-
-  &__button-next {
-    background-color: $primary-gold;
-    color: #ffffff;
-  }
-
-  /* Estilos específicos de los elementos dentro de cada slide */
-  &__image-container {
-    width: 100%;
-    max-width: 350px;
-    position: relative;
-    overflow: visible;
-    height: 250px;
+    position: relative; /* Importante: Crea un contexto de apilamiento */
+    overflow: hidden;
   }
 
   &__image {
-    display: block;
     width: 100%;
+    height: auto;
+    display: block;
     object-fit: cover;
   }
 
+  /* iconos */
   &__icons {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #ffffff;
-    padding: 0.3rem 0.5rem;
-    display: flex;
-    gap: 0.3rem;
-    font-size: 0.9rem;
-    z-index: 10;
-    border: #000 solid 1px;
-  }
-  &__icons img {
-    width: 1.3rem;
-    height: 1.3rem;
-  }
-
-  &__info-box {
-    position: absolute;
-    bottom: -4rem;
-    left: 50%;
-    transform: translateX(-50%);
     width: 90%;
-    background-color: #ffffff;
-    border: #000 solid 1px;
-    padding: 1.5rem;
+    margin: -2rem auto;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    z-index: 10;
+    background: #ffffff;
+    padding: 1rem;
+    gap: 0.5rem;
+    box-shadow: 0px 8px 16px 0px #8A8A8A0D;
+    position: relative; /* Importante: Posicionado para z-index */
+    z-index: 10; /* Valor alto para estar encima */
+  }
+  &__icons img {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+
+  /* info debajo */
+  &__info-box {
+    padding: 1rem 0;
+    text-align: center;
+    margin-top: 3rem;
   }
 
   &__room-title {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0.5rem 0 0.25rem;
   }
 
   &__room-description {
-    font-size: 0.85rem;
-    color: #777777;
-    font-family: Roboto, serif;
-    margin: 0.25rem 0 0 0;
+    font-size: 0.9rem;
+    color: #555;
+    margin: 0 0 0.75rem;
   }
 
   &__room-price {
     font-size: 1rem;
-    font-family: Archivo, serif;
-    color: $primary-gold;
     font-weight: 700;
+    color: $primary-gold;
+    margin-bottom: 0.5rem;
   }
-}
 
-/* Responsivo (ajusta el ámbito según necesites) */
-@media (min-width: 768px) {
-  .grid_rooms  {
-    padding: 6rem 0rem 9rem 0rem;
-    &__title {
-      font-size: 2.5rem;
+  &__booking-btn {
+    display: inline-block;
+    background: transparent;
+    border: none;
+    color: $primary-gold;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+    padding: 0.25rem 0.5rem;
+  }
+  &__booking-btn:hover {
+    background: $primary-gold;
+    color: #fff;
+  }
+
+  /* flechas en la base */
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 4px;
+    top: auto;
+    bottom: 1rem;
+    background: #eee;
+    color: #111;
+  }
+  .swiper-button-next {
+    background: $primary-gold;
+    color: #fff;
+  }
+
+  /* paginación numerada */
+  &__pagination {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+
+    .swiper-pagination-bullet {
+      padding: 0.25rem 0.5rem;
+      background: transparent;
+      color: #777;
+      opacity: 1;
+      border: 1px solid transparent;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.3s, color 0.3s;
+    }
+    .swiper-pagination-bullet-active {
+      background: $primary-gold;
+      color: #fff;
+      border-color: $primary-gold;
     }
   }
 }
 
-@media (min-width: 1024px) {
+/* Media queries */
+@media (min-width: 768px) {
   .grid_rooms {
-    &__title {
-      font-size: 3rem;
+    &__container {
+      padding-bottom: 3rem; /* espacio para flechas/paginación */
     }
   }
 }

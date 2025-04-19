@@ -34,6 +34,7 @@ export default async function initSwiperRooms_Grid() {
               <p class="grid_rooms__room-description ">${item.description}</p>
             </div>
             <span class="grid_rooms__room-price">${item.price}</span>
+            <span class="grid_rooms__room-book">Booking Now</span>
           </div>
         </div>
       </div>
