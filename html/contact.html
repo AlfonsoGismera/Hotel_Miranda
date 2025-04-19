@@ -35,8 +35,8 @@
         <ul class="header__menu">
           <li class="header__menu-item"><a class="header__menu-link" href="about_us.html">About Us</a></li>
           <li class="header__menu-item"><a class="header__menu-link" href="room_grid.html">Rooms</a></li>
-          <li class="header__menu-item"><a class="header__menu-link" href="contact.html">Offers</a></li>
-          <li class="header__menu-item"><a class="header__menu-link" href="#">Contact</a></li>
+          <li class="header__menu-item"><a class="header__menu-link" href="#">Offers</a></li>
+          <li class="header__menu-item"><a class="header__menu-link" href="contact.html">Contact</a></li>
         </ul>
       </nav>
 
@@ -61,10 +61,92 @@
         <h1 class="hero__title">Contact</h1>
         <div class="hero__breadcrumb"></div>
       </div>
-
-
     </section>
 
+      <section class="contact">
+        <!-- Tres tarjetas con número de fondo -->
+        <div class="contact__cards">
+          <div class="contact__card">
+            <span class="contact__card-number">01</span>
+            <div class="contact__card-content">
+              <img src="../assets/icons/locations.svg" alt="Dirección" class="contact__icon" />
+              <div>
+                <h3 class="contact__card-title">Hotel Address</h3>
+                <p class="contact__card-text">
+                  Calle Gran Vía, 28<br />
+                  Madrid, España
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="contact__card">
+            <span class="contact__card-number">02</span>
+            <div class="contact__card-content">
+              <img src="../assets/icons/tlf.svg" alt="Teléfono" class="contact__icon" />
+              <div>
+                <h3 class="contact__card-title">Phone Number</h3>
+                <p class="contact__card-text">
+                  +34 912 345 678
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="contact__card">
+            <span class="contact__card-number">03</span>
+            <div class="contact__card-content">
+              <img src="../assets/icons/email.svg" alt="Email" class="contact__icon" />
+              <div>
+                <h3 class="contact__card-title">Email</h3>
+                <p class="contact__card-text">
+                  info@mirandahotel.com
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Mapa -->
+        <div class="contact__map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.123456789012!2d-3.7158!3d40.4203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228e4f6e3e123%3A0xabcdef123456!2sGran%20V%C3%ADa%2C%2028%2C%20Madrid!5e0!3m2!1ses!2ses!4v1690000000000!5m2!1ses!2ses"
+            width="100%" height="100%" style="border:0;"
+            allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </section>
+
+      <section class="contact__form">
+  <form class="contact__form-container" novalidate>
+    <div class="contact__fields">
+      <div class="contact__field">
+        <i class="fas fa-user contact__icon"></i>
+        <input type="text" placeholder="Your full name" />
+      </div>
+      <div class="contact__field">
+        <i class="fas fa-envelope contact__icon"></i>
+        <input type="email" placeholder="Enter email address" />
+      </div>
+      <div class="contact__field">
+        <i class="fas fa-phone-alt contact__icon"></i>
+        <input type="tel" placeholder="Add phone number" />
+      </div>
+      <div class="contact__field">
+        <i class="fas fa-tag contact__icon"></i>
+        <input type="text" placeholder="Enter subject" />
+      </div>
+      <div class="contact__field contact__field--full">
+        <i class="fas fa-comment-alt contact__icon"></i>
+        <textarea placeholder="Enter message"></textarea>
+      </div>
+    </div>
+    <div class="contact__button-wrapper">
+      <button type="submit" class="btn btn--gold">Send</button>
+    </div>
+  </form>
+</section>
+
+    
+    
+    
 
 
   </main>
@@ -78,7 +160,7 @@
         <div class="info-section__column">
           <div class="info-section__logo-and-text">
             <div class="info-section__logo">
-              <img src="./assets/logos/LogoM2_invertido.svg" alt="Hotel Miranda Logo" class="info-section__logo" />
+              <img src="../assets/logos/LogoM2_invertido.svg" alt="Hotel Miranda Logo" class="info-section__logo" />
               <span class="info-section__logo-text">
                 <span class="info-section__logo-first-word">HOTEL</span><br>MIRANDA
               </span>
@@ -173,6 +255,12 @@
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="../js/main.js" type="module"></script>
+
+  <!-- Google Maps API (futuro mirarlo) -->
+<!-- <script async
+src="https://maps.googleapis.com/maps/api/js?key=TU_API_KEY&callback=initContactMap">
+</script> -->
+
 </body>
 
 </html>

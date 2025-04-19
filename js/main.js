@@ -6,6 +6,7 @@ import initSwiperRooms_Grid from "./slider_grid.js";
 import initCoreFeaturesSwiper_white from "./slider_Fea_white.js";
 import initCoreFeaturesSwiper_black from "./slider_Fea_black.js";
 import initFoodHome from './food_home.js';
+// import  initContactMap  from './contactMap.js';
 
 document.addEventListener("DOMContentLoaded", () => {
   const currentPath = window.location.pathname;
@@ -22,6 +23,10 @@ document.addEventListener("DOMContentLoaded", () => {
   if (currentPath === "/html/room_grid.html" || currentPath.includes("room_grid.html")) {
     console.log("¡Estamos en room_grid.html!");
     initSwiperRooms_Grid();
+  } 
+  if (currentPath === "/html/contact.html" || currentPath.includes("contact.html")) {
+    console.log("¡Estamos en contact.html!");
+    // initContactMap();
   } 
   initHeaderToggle();
   initHeroBreadcrumb();
