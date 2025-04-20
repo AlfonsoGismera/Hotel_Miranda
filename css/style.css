@@ -1216,6 +1216,219 @@ p {
   }
 }
 
+.about_home {
+  padding: 4rem 0rem;
+  background: #f5f5f5;
+  /* Al hacer hover, el svg invierte para salir blanco */
+  /* Al hacer hover, el texto pasa a blanco */
+}
+.about_home__inner {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.about_home__video-wrapper {
+  width: 100%;
+}
+.about_home__video-wrapper iframe {
+  width: 100%;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+}
+.about_home__headline {
+  font-size: 1.6rem;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .about_home__headline {
+    font-size: 4rem;
+  }
+}
+.about_home__features {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (min-width: 768px) {
+  .about_home__features {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.about_home__feature-card {
+  background: transparent;
+  padding: 2rem 1rem;
+  text-align: center;
+  transition: background 0.3s;
+}
+.about_home__feature-card:hover {
+  background: #BEAD8E;
+}
+.about_home__feature-icon {
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 1rem;
+  transition: filter 0.3s;
+  filter: sepia(100%) brightness(70%) hue-rotate(-40deg);
+  transition: filter 0.3s ease;
+}
+.about_home .about_home__feature-card:hover .about_home__feature-icon {
+  filter: brightness(0) invert(1);
+}
+.about_home__feature-text {
+  font-size: 1rem;
+  color: #111;
+  transition: color 0.3s;
+}
+.about_home .about_home__feature-card:hover .about_home__feature-text {
+  color: #fff;
+}
+.about_home__restaurant {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+@media (min-width: 768px) {
+  .about_home__restaurant {
+    flex-direction: row;
+    gap: 4rem;
+  }
+}
+.about_home__restaurant-image {
+  flex: 1;
+  background: url("https://images.unsplash.com/photo-1744776411221-702f2848b0b2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fHJlc3RhdXJhbnR8ZW58MHwwfDJ8fHww") center/cover no-repeat;
+  min-height: 200px;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .about_home__restaurant-image {
+    min-height: 350px;
+  }
+}
+.about_home__restaurant-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+}
+.about_home__subtitle {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #777777;
+  font-weight: 700;
+  font-family: Archivo, sans-serif;
+}
+.about_home__rest-title {
+  font-size: 1.8rem;
+}
+@media (min-width: 768px) {
+  .about_home__rest-title {
+    font-size: 2rem;
+  }
+}
+.about_home__rest-text {
+  font-size: 0.8rem;
+  color: #555;
+  line-height: 1.5;
+}
+.about_home .about_button {
+  width: 216px;
+  height: 60px;
+  box-shadow: 0px 14px 24px 0px rgba(190, 173, 142, 0.3607843137);
+}
+
+.counter__outer {
+  width: 100%;
+}
+.counter__inner {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 4rem 0;
+}
+.counter__subtitle {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: #777;
+}
+.counter__title {
+  font-size: 2.5rem;
+  color: #111;
+}
+.counter__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+@media (min-width: 768px) {
+  .counter__cards {
+    flex-direction: row;
+  }
+}
+.counter__card {
+  flex: 1;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  position: relative;
+}
+.counter__card:hover {
+  background: #f9f9f9;
+}
+.counter__icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 1rem;
+}
+.counter__data {
+  flex: 1;
+}
+.counter__number {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #111;
+}
+.counter__text {
+  font-size: 0.9rem;
+  color: #777;
+}
+.counter__arrow {
+  font-size: 1rem;
+  color: #aaa;
+  margin-left: 1rem;
+}
+.counter__images {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+@media (min-width: 768px) {
+  .counter__images {
+    flex-direction: row;
+  }
+}
+.counter__images img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.75rem;
+}
+@media (min-width: 768px) {
+  .counter__images img {
+    width: 48%;
+  }
+}
+
 .grid_rooms {
   width: 100%;
   padding: 1rem 1rem 1rem;

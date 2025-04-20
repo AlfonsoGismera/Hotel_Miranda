@@ -11,10 +11,12 @@
 @import './home/food_home';
 @import './home/footer'; 
 // About us
-@import './about_us/core_black';
+@import './about_us/about_core_black';
+@import './about_us/about_home';
+@import './about_us/about_counter';
 // Rooms Grid
 @import './rooms/swiperGri_rooms';
-// Rooms Grid
+// Contact
 @import './contact/contact';
 
 * {
