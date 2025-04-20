@@ -6,8 +6,8 @@ import initSwiperRooms_Grid from "./slider_grid.js";
 import initCoreFeaturesSwiper_white from "./slider_Fea_white.js";
 import initCoreFeaturesSwiper_black from "./slider_Fea_black.js";
 import initFoodHome from './food_home.js';
-import initFoodHome from './food_home.js';
-// import  initContactMap  from './contactMap.js'; initCoreFeaturesSwiper_black
+import initHomeImagesSwiper from './home_img.js';
+// import  initContactMap  from './contactMap.js';
 
 document.addEventListener("DOMContentLoaded", () => {
   const currentPath = window.location.pathname;
@@ -16,10 +16,12 @@ document.addEventListener("DOMContentLoaded", () => {
     hero_dates();
     initSwiperRooms();
     initFoodHome();
+    initHomeImagesSwiper();
   }
   if (currentPath === "/html/about_us.html" || currentPath.includes("about_us.html")) {
     console.log("¡Estamos en about_us.html!");
     initCoreFeaturesSwiper_black();
+
   }
   if (currentPath === "/html/room_grid.html" || currentPath.includes("room_grid.html")) {
     console.log("¡Estamos en room_grid.html!");

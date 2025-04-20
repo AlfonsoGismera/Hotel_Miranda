@@ -956,6 +956,47 @@ p {
   background: #555;
 }
 
+.home_images__inner {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+.home_images__swiper {
+  width: 100%;
+  position: relative;
+}
+.home_images__img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  display: block;
+}
+.home_images__prev, .home_images__next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2.5rem;
+  height: 2.5rem;
+  background: rgba(0, 0, 0, 0.1);
+  color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+@media (min-width: 768px) {
+  .home_images__prev, .home_images__next {
+    display: none;
+  }
+}
+.home_images__prev {
+  left: 0.5rem;
+}
+.home_images__next {
+  right: 0.5rem;
+}
+
 /* Footer General */
 .footer {
   font-size: 0.8rem;
