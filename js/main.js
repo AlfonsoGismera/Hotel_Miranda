@@ -6,7 +6,8 @@ import initSwiperRooms_Grid from "./slider_grid.js";
 import initCoreFeaturesSwiper_white from "./slider_Fea_white.js";
 import initCoreFeaturesSwiper_black from "./slider_Fea_black.js";
 import initFoodHome from './food_home.js';
-// import  initContactMap  from './contactMap.js';
+import initFoodHome from './food_home.js';
+// import  initContactMap  from './contactMap.js'; initCoreFeaturesSwiper_black
 
 document.addEventListener("DOMContentLoaded", () => {
   const currentPath = window.location.pathname;

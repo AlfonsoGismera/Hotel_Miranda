@@ -1,0 +1,49 @@
+.home_images {
+    &__inner {
+      width: 80%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem 0;
+    }
+  
+    &__swiper {
+      width: 100%;
+      position: relative;
+    }
+  
+    &__img {
+      width: 100%;
+      height: auto;
+      border-radius: 0.5rem;
+      display: block;
+    }
+  
+    // Flechas: sólo en móvil
+    &__prev,
+    &__next {
+      @media (min-width: 768px) {
+        display: none;
+      }
+  
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 2.5rem;
+      height: 2.5rem;
+      background: rgba(0, 0, 0, 0.1);
+      border-radius: 0.25rem;
+      color: #111;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 10;
+    }
+  
+    &__prev {
+      left: 0.5rem;
+    }
+    &__next {
+      right: 0.5rem;
+    }
+  }
+  
