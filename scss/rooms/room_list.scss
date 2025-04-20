@@ -1,7 +1,20 @@
-// style for room_list.html cards
+// list_rooms.scss
+
 .list_rooms {
+    &__inner {
+      width: 80%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem 0;
+    }
+  
+    &__container {
+      position: relative;
+      width: 100%;
+    }
+  
     &__wrapper {
-      /* swiper wrapper, no extra styling needed here */
+      /* Swiper wrapper, no estilos extras */
     }
   
     &__slide {
@@ -12,7 +25,7 @@
       border: 1px solid #e0e0e0;
       border-radius: 0.5rem;
       background: #fff;
-      
+  
       @media (max-width: 767px) {
         flex-direction: column;
         align-items: center;
@@ -20,12 +33,10 @@
       }
     }
   
-    // Left content (icons, title, description, price & link)
     &__content {
       flex: 1;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
     }
   
     &__icons {
@@ -54,7 +65,6 @@
       flex-grow: 1;
     }
   
-    // Price and "Booking Now" link aligned right (or centered on mobile)
     &__actions {
       display: flex;
       flex-direction: column;
@@ -85,11 +95,9 @@
       }
     }
   
-    // Right image
     &__image-container {
       flex: 0 0 40%;
       max-width: 40%;
-      position: relative;
   
       @media (max-width: 767px) {
         flex: 0 0 100%;
@@ -98,11 +106,33 @@
     }
   
     &__image {
-      display: block;
       width: 100%;
       height: auto;
       border-radius: 0.5rem;
       object-fit: cover;
+    }
+  
+    // Paginación numérica
+    &__pagination {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      margin-top: 1rem;
+  
+      .swiper-pagination-bullet {
+        width: 1.2rem;
+        height: 1.2rem;
+        background: #eee;
+        color: #555;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.9rem;
+      }
+      .swiper-pagination-bullet-active {
+        background: $primary-gold;
+        color: #fff;
+      }
     }
   }
   

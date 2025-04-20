@@ -1628,6 +1628,126 @@ p {
     gap: 0.5rem;
   }
 }
+.list_rooms__inner {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+.list_rooms__container {
+  position: relative;
+  width: 100%;
+}
+.list_rooms__wrapper {
+  /* Swiper wrapper, no estilos extras */
+}
+.list_rooms__slide {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 0.5rem;
+  background: #fff;
+}
+@media (max-width: 767px) {
+  .list_rooms__slide {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+.list_rooms__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.list_rooms__icons {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+.list_rooms__icons img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.list_rooms__title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #111;
+}
+.list_rooms__description {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+  flex-grow: 1;
+}
+.list_rooms__actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+@media (max-width: 767px) {
+  .list_rooms__actions {
+    align-items: center;
+    margin-top: 1rem;
+  }
+}
+.list_rooms__price {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #BEAD8E;
+  margin-bottom: 0.5rem;
+}
+.list_rooms__book-link {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #BEAD8E;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.list_rooms__book-link:hover {
+  color: rgb(171.3764044944, 149.5056179775, 109.6235955056);
+}
+.list_rooms__image-container {
+  flex: 0 0 40%;
+  max-width: 40%;
+}
+@media (max-width: 767px) {
+  .list_rooms__image-container {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+.list_rooms__image {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  object-fit: cover;
+}
+.list_rooms__pagination {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+.list_rooms__pagination .swiper-pagination-bullet {
+  width: 1.2rem;
+  height: 1.2rem;
+  background: #eee;
+  color: #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+}
+.list_rooms__pagination .swiper-pagination-bullet-active {
+  background: #BEAD8E;
+  color: #fff;
+}
+
 .contact {
   width: 100%;
   max-width: 1200px;
