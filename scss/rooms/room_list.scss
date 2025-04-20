@@ -1,0 +1,108 @@
+// style for room_list.html cards
+.list_rooms {
+    &__wrapper {
+      /* swiper wrapper, no extra styling needed here */
+    }
+  
+    &__slide {
+      display: flex;
+      align-items: flex-start;
+      gap: 1.5rem;
+      padding: 1.5rem;
+      border: 1px solid #e0e0e0;
+      border-radius: 0.5rem;
+      background: #fff;
+      
+      @media (max-width: 767px) {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    }
+  
+    // Left content (icons, title, description, price & link)
+    &__content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  
+    &__icons {
+      display: flex;
+      gap: 0.75rem;
+      margin-bottom: 1rem;
+  
+      img {
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+    }
+  
+    &__title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      color: #111;
+    }
+  
+    &__description {
+      font-size: 0.9rem;
+      color: #555;
+      line-height: 1.4;
+      margin-bottom: 1rem;
+      flex-grow: 1;
+    }
+  
+    // Price and "Booking Now" link aligned right (or centered on mobile)
+    &__actions {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+  
+      @media (max-width: 767px) {
+        align-items: center;
+        margin-top: 1rem;
+      }
+    }
+  
+    &__price {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: $primary-gold;
+      margin-bottom: 0.5rem;
+    }
+  
+    &__book-link {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: $primary-gold;
+      text-decoration: none;
+      transition: color 0.3s;
+  
+      &:hover {
+        color: darken($primary-gold, 10%);
+      }
+    }
+  
+    // Right image
+    &__image-container {
+      flex: 0 0 40%;
+      max-width: 40%;
+      position: relative;
+  
+      @media (max-width: 767px) {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+    }
+  
+    &__image {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 0.5rem;
+      object-fit: cover;
+    }
+  }
+  

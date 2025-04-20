@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Miranda - Rooms Available</title>
+  <link rel="icon" type="image/png" href="../assets/logos/LogoM2.svg" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="page">
+  <header class="header">
+    <p class="header__background-text">We Make Your Feel Comfortable</p>
+
+    <div class="header__background">
+
+    </div>
+    <div class="header__container">
+      <button class="header__toggle" aria-label="Toggle Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <div class="header__logo">
+        <img src="../assets/logos/LogoM2.svg" alt="Logo Hotel Miranda" class="header__logo-img" />
+        <span class="header__logo-text">
+          <span class="header__logo-first-word">HOTEL</span><br>MIRANDA
+        </span>
+      </div>
+
+      <nav class="header__nav">
+        <ul class="header__menu">
+          <li class="header__menu-item"><a class="header__menu-link" href="about_us.html">About Us</a></li>
+          <li class="header__menu-item"><a class="header__menu-link" href="room_grid.html">Rooms</a></li>
+          <li class="header__menu-item"><a class="header__menu-link" href="#">Offers</a></li>
+          <li class="header__menu-item"><a class="header__menu-link" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <button class="header__action-btn" aria-label="Cuenta">
+          <i class="fas fa-user"></i>
+        </button>
+        <button class="header__action-btn" aria-label="Buscar">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="main">
+    <!-- Sección Hero -->
+    <section class="hero">
+      <!-- Bloque superior: información, título y botones -->
+      <div class="hero__info">
+        <p class="hero__subtext">The Ultimate Rooms</p>
+        <h1 class="hero__title">Rooms Available</h1>
+        <div class="hero__breadcrumb"></div>
+      </div>
+    </section>
+
+
+
+
+<!-- Sección Rooms Available -->
+<section class="list_rooms">
+    <div class="list_rooms__inner">
+      <h2 class="list_rooms__title">Rooms Available</h2>
+      <p class="list_rooms__subtitle">Discover comfort and style</p>
+  
+      <div class="list_rooms__container swiper-container">
+        <div class="swiper-wrapper list_rooms__wrapper">
+          <!-- aquí inyectaremos solo las habitaciones disponibles -->
+        </div>
+        <!-- paginación numérica -->
+        <div class="list_rooms__pagination"></div>
+      </div>
+    </div>
+  </section>
+
+
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <!-- Parte superior: info-section -->
+    <section class="info-section">
+      <div class="info-section__container">
+        <!-- Columna Izquierda (Logo + Descripción + Social) -->
+        <div class="info-section__column">
+          <div class="info-section__logo-and-text">
+            <div class="info-section__logo">
+              <img src="../assets/logos/LogoM2_invertido.svg" alt="Hotel Miranda Logo" class="info-section__logo" />
+              <span class="info-section__logo-text">
+                <span class="info-section__logo-first-word">HOTEL</span><br>MIRANDA
+              </span>
+            </div>
+            <p class="info-section__description">
+              Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed doing eius mod tempor incididunt ut
+              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat ion ullamco laboris nisi.
+            </p>
+          </div>
+          <div class="info-section__social-icons">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <img src="../assets/icons/facebook.svg" alt="Facebook Miranda" />
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <img src="../assets/icons/twiterX.svg" alt="Twiter/X Miranda" />
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <img src="../assets/icons/be.svg" alt="Be Miranda" />
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <img src="../assets/icons/in.svg" alt="In Miranda" />
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <img src="../assets/icons/youtube.svg" alt="Youtube Miranda" />
+            </a>
+
+          </div>
+        </div>
+
+        <!-- Columna Central (Servicios) -->
+        <div class="info-section__column">
+          <h2 class="info-section__title">Services.</h2>
+          <ul class="info-section__list">
+            <li>+ Restaurant &amp; Bar</li>
+            <li>+ Swimming Pool</li>
+            <li>+ Wellness &amp; Spa</li>
+            <li>+ Reception</li>
+            <li>+ Conference Room</li>
+            <li>+ Cocktail Party</li>
+
+          </ul>
+          <ul class="info-section__list">
+            <li>+ Gaming Zone</li>
+            <li>+ Marbling Facility</li>
+            <li>+ Party Planning</li>
+            <li>+ Your Consultancy</li>
+
+          </ul>
+
+        </div>
+
+        <!-- Columna Derecha (Contact Info) -->
+        <div class="info-section__column">
+          <h2 class="info-section__title">Contact Us</h2>
+          <ul class="info-section__contact-list">
+            <li>
+              <span class="info-section__contact-icon">
+                <img src="../assets/icons/tlf.svg" alt="Mobile Miranda" />
+              </span>
+              Phone Number<br /> +00 123 4567 8910
+            </li>
+            <li>
+              <span class="info-section__contact-icon">
+                <img src="../assets/icons/email.svg" alt="Email Miranda" />
+              </span>
+              Email<br /> Miran_hotel@gmail.com
+            </li>
+            <li>
+
+              <span class="info-section__contact-icon">
+                <img src="../assets/icons/locations.svg" alt="Location Miranda" />
+              </span>
+              Location<br /> Arcentales Avenue 23
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Parte inferior: footer bottom -->
+    <div class="footer__bottom">
+      <p class="footer__copyright">
+        © 2023 Hotel Miranda
+      </p>
+      <div class="footer__links">
+        <a href="#">Terms of Use</a>
+        <span class="footer__separator">|</span>
+        <a href="#">Privacy &amp; Environmental Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="../js/main.js" type="module"></script>
+</body>
+
+</html>

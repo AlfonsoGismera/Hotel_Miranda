@@ -7,6 +7,7 @@ import initCoreFeaturesSwiper_white from "./slider_Fea_white.js";
 import initCoreFeaturesSwiper_black from "./slider_Fea_black.js";
 import initFoodHome from './food_home.js';
 import initHomeImagesSwiper from './home_img.js';
+import initListRoomsSlider from './list_rooms.js';
 // import  initContactMap  from './contactMap.js';
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -26,6 +27,10 @@ document.addEventListener("DOMContentLoaded", () => {
   if (currentPath === "/html/room_grid.html" || currentPath.includes("room_grid.html")) {
     console.log("¡Estamos en room_grid.html!");
     initSwiperRooms_Grid();
+  }
+  if (currentPath === "/html/room_list.html" || currentPath.includes("room_list.html")) {
+    console.log("¡Estamos en room_list.html!");
+    initListRoomsSlider();
   } 
   if (currentPath === "/html/contact.html" || currentPath.includes("contact.html")) {
     console.log("¡Estamos en contact.html!");
