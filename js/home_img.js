@@ -1,17 +1,17 @@
 export default function initHomeImagesSwiper() {
   new Swiper('.home_images__swiper', {
     slidesPerView: 1,
-    spaceBetween: 16,
+    spaceBetween: 30,
     loop: true,
-    navigation: {
-      prevEl: '.home_images__prev',
-      nextEl: '.home_images__next',
-    },
-
+    pagination: {
+        el: '.home_images__pagination',
+        clickable: true,
+      },
     breakpoints: {
       768: {
         slidesPerView: 3,
         spaceBetween: 24,
+        pagination: false,
       }
     }
   });
