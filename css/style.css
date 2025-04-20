@@ -1356,11 +1356,8 @@ p {
 .counter__subtitle {
   font-size: 0.9rem;
   text-transform: uppercase;
-  color: #777;
-}
-.counter__title {
-  font-size: 2.5rem;
-  color: #111;
+  color: #777777;
+  font-family: Archivo, serif;
 }
 .counter__cards {
   display: flex;
@@ -1385,7 +1382,7 @@ p {
 }
 .counter__icon {
   width: 2.5rem;
-  height: 2.5rem;
+  height: 3.5rem;
   margin-right: 1rem;
 }
 .counter__data {
@@ -1394,11 +1391,11 @@ p {
 .counter__number {
   display: block;
   font-size: 2rem;
-  font-weight: 700;
-  color: #111;
+  font-family: Old Standard TT, serif;
 }
 .counter__text {
   font-size: 0.9rem;
+  font-family: Roboto, serif;
   color: #777;
 }
 .counter__arrow {
