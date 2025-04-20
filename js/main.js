@@ -8,6 +8,7 @@ import initCoreFeaturesSwiper_black from "./slider_Fea_black.js";
 import initFoodHome from './food_home.js';
 import initHomeImagesSwiper from './home_img.js';
 import initListRoomsSlider from './list_rooms.js';
+
 // import  initContactMap  from './contactMap.js';
 
 document.addEventListener("DOMContentLoaded", () => {

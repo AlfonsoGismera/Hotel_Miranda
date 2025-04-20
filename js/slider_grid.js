@@ -48,7 +48,7 @@ export default async function initSwiperRooms_Grid() {
         fill: 'row'
       },
       spaceBetween: 30,
-      loop: false, 
+      loop: true, 
       pagination: {
         el: '.grid_rooms__pagination',
         clickable: true,
