@@ -52,7 +52,7 @@ export default async function initSwiperRooms_Grid() {
       pagination: {
         el: '.grid_rooms__pagination',
         clickable: true,
-        // Renderiza bullets como números y aplica tu clase activa
+        // Renderiza bullets como números 
         renderBullet: (index, className) => {
           // index empieza en 0, por eso +1
           return `<span class="${className}">${index + 1}</span>`;

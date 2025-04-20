@@ -150,21 +150,21 @@
 
       }
     .list_rooms__content {
-      align-items: flex-start; /* Revertir alineación para el flujo normal del precio y enlace */
+      align-items: flex-start; 
     }
     .list_rooms__actions {
-      flex-direction: row; /* Colocar precio y enlace en la misma línea */
-      justify-content: space-between; /* Espaciar precio y enlace */
-      align-items: center; /* Alinear verticalmente precio y enlace */
+      flex-direction: row; 
+      justify-content: space-between; 
+      align-items: center; 
     }
     .list_rooms__price {
-      position: static; /* Volver al posicionamiento estático en móvil */
-      margin-bottom: 0; /* Eliminar margen inferior */
+      position: static; 
+      margin-bottom: 0; 
       font-size: 0.9rem;
     }
     .list_rooms__price span {
-      border-bottom: none; /* Eliminar la línea gris */
-      padding-bottom: 0; /* Eliminar el padding inferior del span */
+      border-bottom: none; 
+      padding-bottom: 0; 
     }
     .list_rooms__book-link {
       position: static;   

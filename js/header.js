@@ -1,4 +1,3 @@
-// js/header.js
 export function initHeaderToggle() {
   const toggleBtn = document.querySelector('.header__toggle');
   const nav       = document.querySelector('.header__nav');
@@ -19,7 +18,7 @@ export function initHeaderToggle() {
   });
 }
 
-// js/breadcrumb.js
+
 export function initHeroBreadcrumb() {
   // sólo si NO estamos en la HOME "/"
   if (window.location.pathname === '/') return;

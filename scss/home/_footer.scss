@@ -1,4 +1,3 @@
-/* Footer General */
 .footer {
 
   font-size: 0.8rem;
@@ -12,7 +11,7 @@
   padding: 3rem 0rem 0 0rem;
 }
 
-/* Footer Bottom: contendrá el copy y los links */
+/* Footer Bottom */
 .footer__bottom {
    border-top: 1px solid #ccc;
    padding: 1rem 1rem 1rem 1rem;
@@ -170,7 +169,6 @@
   }
 }
 
-/* Media Queries para adaptar la disposición a pantallas mayores */
 @media (min-width: 768px) {
   .info-section__container {
     flex-direction: row;

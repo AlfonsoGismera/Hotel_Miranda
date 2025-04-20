@@ -5,7 +5,7 @@
   color: #111;
   // width: 80%;
   margin: 0 auto;
-  position: relative; /* Establece este section como el contenedor de referencia */
+  position: relative; 
   overflow: hidden;
 
   &__header {
@@ -17,22 +17,22 @@
     padding-left: 7rem;
     @media (max-width: 767px) {
       padding-left: 0rem; /* Reinicia el padding en móvil */
-      // align-items: center; /* Centra los elementos en móvil */
+      // align-items: center;
     }
   }
 
 
   &__icon {
-    position: absolute; /* Saca el icono del flujo normal */
-    top: 0rem;       /* Ajusta la posición vertical */
+    position: absolute; 
+    top: 0rem;      
     left: 2rem;
     width: 229px;
     height: 229px;
     margin-bottom: 1rem;
     background-image: url('../assets/icons/donut.svg');
-    background-size: contain; /* Ajusta el tamaño de la imagen dentro del div */
-    background-repeat: no-repeat; /* Evita la repetición de la imagen */
-    background-position: center; /* Centra la imagen dentro del div */
+    background-size: contain;
+    background-repeat: no-repeat; 
+    background-position: center;
 
     @media (max-width: 767px) {
       background-image: url('../assets/icons/donut_roto.svg');

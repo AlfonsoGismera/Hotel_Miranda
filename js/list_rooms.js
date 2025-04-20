@@ -45,7 +45,6 @@ export default async function initListRoomsSlider() {
     `).join('');
     console.log("• injected HTML");
 
-    // inicializa Swiper con Grid
     new Swiper('.list_rooms__container', {
       slidesPerView: 1,
       slidesPerGroup: 2,

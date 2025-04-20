@@ -21,7 +21,7 @@
       align-items: center;
     }
   
-    /* Icono encima del número */
+
     &__icon {
       width: 50px;
       height: auto;
@@ -32,21 +32,21 @@
       margin-bottom: 0.5rem;
     }
   
-    /* Número principal grande */
+
     &__number {
       font-size: 3rem;
       font-weight: 700;
       line-height: 1;
     }
   
-    /* Sufijo pequeño (“+”) */
+
     &__suffix {
       font-size: 1rem;
       font-weight: 400;
       margin-left: 0.25rem;
     }
   
-    /* Etiqueta descriptiva */
+
     &__label {
       font-size: 0.9rem;
       color: #aaa;
@@ -55,7 +55,7 @@
       max-width: 200px;
     }
   
-    /* TABLET+ (≥768px): fila horizontal */
+
     @media (min-width: 768px) {
       &__container {
         flex-direction: row;
